@@ -15,7 +15,7 @@ export default function HomePageCarousel({ data, url }) {
       >
         {data?.map((item, key) => (
           <div className="w-full h-fit" key={item?.key}>
-            <Image
+            <img
               src={`${url}/${item}`}
               className="w-full min-w-full object-contain"
             />
