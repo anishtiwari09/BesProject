@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 export default function HomePageCarousel({ data, url }) {
@@ -13,11 +14,10 @@ export default function HomePageCarousel({ data, url }) {
         interval={5000}
       >
         {data?.map((item, key) => (
-          <div className="w-full h-fit">
-            <img
+          <div className="w-full h-fit" key={item?.key}>
+            <Image
               src={`${url}/${item}`}
               className="w-full min-w-full object-contain"
-              key={key}
             />
           </div>
         ))}
