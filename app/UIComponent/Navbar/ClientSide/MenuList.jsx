@@ -4,7 +4,7 @@ import MenuCompoenent from "./MenuComponent";
 export default function MenuList({ data }) {
   const [open, setOpen] = useState(-1);
   return (
-    <div className="flex">
+    <div className="flex justify-center">
       {data?.map((item, key) => (
         <MenuCompoenent
           key={item.id}

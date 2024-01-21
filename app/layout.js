@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./UIComponent/Navbar/Navbar";
+import Footer from "./UIComponent/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className="h-full overflow-hidden">
         <Navbar />
         <div className="overflow-auto inner_page">{children}</div>
+        <Footer />
       </body>
     </html>
   );

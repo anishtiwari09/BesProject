@@ -1,6 +1,8 @@
+import Countdown from "./UIComponent/Carousel/HomePage/Countdown";
 import EventDetails from "./UIComponent/Carousel/HomePage/EventDetails";
 import HomePageCarousel from "./UIComponent/Carousel/HomePage/HomePageCarousel";
 import Notification from "./UIComponent/Carousel/HomePage/Notification";
+import Partener from "./UIComponent/Carousel/HomePage/Partener";
 import YoutubeThumbnail from "./UIComponent/Carousel/HomePage/YoutubeThumbnail";
 
 export default function Home() {
@@ -11,7 +13,7 @@ export default function Home() {
   );
 
   return (
-    <div>
+    <div className="relative">
       <div className="relative">
         <div className="absolute -translate-y-1/2 z-[3] top-1/2 w-full">
           <Notification />
@@ -23,8 +25,12 @@ export default function Home() {
           }}
         ></div>
         <HomePageCarousel data={data} url={"/Images/Slider/2023"} />
+        <Countdown from={"Feb 16 , 2024 10:00:00 GMT+0530"} />
       </div>
+
       <YoutubeThumbnail />
+
+      <Partener />
       <EventDetails />
     </div>
   );

@@ -1,5 +1,68 @@
+import Image from "next/image";
 import React from "react";
 
 export default function EventDetails() {
-  return <div>EventDetails</div>;
+  return (
+    <div
+      className="py-8"
+      style={{
+        background: "#1c8bd280",
+      }}
+    >
+      <div className="w-full flex  flex-col">
+        <table className="w-fit m-auto">
+          <tbody>
+            <tr>
+              <td className="p-2">
+                <Image
+                  width={609}
+                  height={395}
+                  src={"/Images/EventDetails/expo2023.jpg"}
+                />
+              </td>
+              <td className="p-2">
+                <Image
+                  width={310}
+                  height={395}
+                  src={"/Images/EventDetails/bes.jpg"}
+                />
+              </td>
+            </tr>
+            <tr className="border-b-2">
+              <td
+                colSpan={2}
+                className="py-[10px] bg-[#6f9a37] font-bold text-white p-2"
+              >
+                Enquiry: For details regarding BES EXPO, please contact
+              </td>
+            </tr>
+            <tr>
+              <td className="p-2 font-bold text-[#1e1f36]">
+                For Conference: The Chairman Conference Committee
+                <br />
+                BES EXPO, 912 Surya Kiran Building
+                <br />
+                19 Kasturba Gandhi Marg, New Delhi-110001
+                <br />
+                Tel: 91-11-23316709
+                <br />
+                E-mail: conference@besindia.com, bes@besindia.com
+              </td>
+              <td className="p-2 font-bold text-[#1e1f36]">
+                For Exhibition: The Coordinator BES EXPO
+                <br />
+                F-6, Shopping Complex, Madan Lal Block
+                <br />
+                Asian Games Village, New Delhi-110049
+                <br />
+                Tel: 91-11-26492444
+                <br />
+                E-mail: exhibition@besindia.com
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
 }

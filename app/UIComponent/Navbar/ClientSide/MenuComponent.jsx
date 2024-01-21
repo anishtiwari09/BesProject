@@ -14,7 +14,11 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
   return (
     <>
       <div>
-        <Button aria-controls={"basic-menu"} onClick={handleClick}>
+        <Button
+          aria-controls={"basic-menu"}
+          onClick={handleClick}
+          className="text-white"
+        >
           {data?.name}
         </Button>
         {data?.isExpandable && data?.subChildren.length ? (
