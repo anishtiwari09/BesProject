@@ -1,0 +1,207 @@
+[
+  {
+    "id": 1,
+    "name": "About BES India",
+    "path": "",
+    "haveChildren": "yes",
+    "isExpandable": true,
+    "subChildren": [
+      {
+        "id": 1,
+        "name": "At a Glance",
+        "path": "",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+      {
+        "id": 2,
+        "name": "Background",
+        "path": "",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+      {
+        "id": 3,
+        "name": "Aims and objectives",
+        "path": "",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+      {
+        "id": 4,
+        "name": "Executive Council",
+        "path": "",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+      {
+        "id": 5,
+        "name": "Committees",
+        "path": "",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+      {
+        "id": 6,
+        "name": "Membership",
+        "path": "",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+      {
+        "id": 7,
+        "name": "Contact us",
+        "path": "",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+      {
+        "id": 8,
+        "name": "FAQ",
+        "path": "",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+      {
+        "id": 9,
+        "name": "Feedback",
+        "path": "",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+      {
+        "id": 10,
+        "name": "Back to top",
+        "path": "",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Events / Conference",
+    "path": "",
+    "haveChildren": "yes",
+    "isExpandable": true,
+    "subChildren": [
+      {
+        "id": 1,
+        "name": "Forthcoming Events",
+        "path": "",
+        "haveChildren": "yes",
+        "isExpandable": true,
+        "subChildren": [
+          {
+            "id": 1,
+            "name": "BES EXPO",
+            "path": "",
+            "haveChildren": "no",
+            "isExpandable": false,
+            "subChildren": []
+          },
+          {
+            "id": 2,
+            "name": "Other Events",
+            "path": "",
+            "haveChildren": "no",
+            "isExpandable": false,
+            "subChildren": [
+              {
+                "id": 1,
+                "name": "BES EXPO",
+                "path": "",
+                "haveChildren": "no",
+                "isExpandable": false,
+                "subChildren": []
+              },
+              {
+                "id": 2,
+                "name": "Other Events",
+                "path": "",
+                "haveChildren": "no",
+                "isExpandable": false,
+                "subChildren": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Previous Events",
+        "path": "",
+        "haveChildren": "yes",
+        "isExpandable": true,
+        "subChildren": [
+          {
+            "id": 1,
+            "name": "Past Event",
+            "path": "",
+            "haveChildren": "no",
+            "isExpandable": false,
+            "subChildren": []
+          },
+          {
+            "id": 2,
+            "name": "Seminars",
+            "path": "",
+            "haveChildren": "no",
+            "isExpandable": false,
+            "subChildren": []
+          },
+          {
+            "id": 3,
+            "name": "Public Service B' Day ",
+            "path": "",
+            "haveChildren": "no",
+            "isExpandable": false,
+            "subChildren": []
+          },
+          {
+            "id": 4,
+            "name": "Others",
+            "path": "",
+            "haveChildren": "no",
+            "isExpandable": false,
+            "subChildren": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Publications",
+    "path": "",
+    "haveChildren": "yes",
+    "isExpandable": true,
+    "subChildren": []
+  },
+  {
+    "id": 4,
+    "name": "View Point",
+    "path": "",
+    "haveChildren": "yes",
+    "isExpandable": true,
+    "subChildren": []
+  },
+  {
+    "id": 5,
+    "name": "Other",
+    "path": "",
+    "haveChildren": "yes",
+    "isExpandable": true,
+    "subChildren": []
+  }
+]
