@@ -13,13 +13,19 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
   };
   return (
     <>
-      <div>
+      <div className="flex items-end">
         <Button
           aria-controls={"basic-menu"}
-          onClick={handleClick}
+          onMouseEnter={handleClick}
           className="text-white"
         >
-          {data?.name}
+          <a
+            className={`header2_menu_list ${
+              open ? "header2_menu_list_open" : ""
+            }`}
+          >
+            {data?.name}
+          </a>
         </Button>
         {data?.isExpandable && data?.subChildren.length ? (
           <Menu

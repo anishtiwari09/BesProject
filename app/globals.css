@@ -1,14 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
+@import "https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900|Orbitron:500,700|Ubuntu:400,500,700&display=swap";
+root {
   --header_height: 90px;
-  --footer_height: 112px;
+  --footer_height: 0px;
 }
 
 * {
   font-family: Poppins, sans-serif;
+}
+.ubuntu_font {
+  font-family: Ubuntu, sans-serif;
 }
 .inner_page {
   max-height: calc(100% - var(--header_height) - var(--footer_height));
@@ -78,4 +81,23 @@
   background: linear-gradient(to left, #f70068 0%, #441066 100%);
   margin: auto;
   max-width: 1200px;
+}
+a.header2_menu_list {
+  position: relative;
+  padding: 10px 0;
+}
+a.header2_menu_list::before {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  content: "";
+  transform: scale(-1);
+  width: 0%;
+  display: block;
+  height: 2px;
+  background: linear-gradient(to left, #f70068 0%, #441066 100%);
+  transition: all 0.3s ease;
+}
+a.header2_menu_list_open::before {
+  width: 100%;
 }

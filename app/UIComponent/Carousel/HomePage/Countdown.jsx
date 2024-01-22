@@ -38,8 +38,8 @@ export default function Countdown({ from }) {
     return () => clearInterval(timerRef.current);
   }, []);
   return (
-    <div className="absolute z-[2] w-full">
-      <div className="coundown  px-[45px] py-[30px] bottom-[-67px]">
+    <div className="absolute z-[2] w-full  bottom-[-67px]">
+      <div className="coundown  px-[45px] py-[30px]">
         <div className="flex gap-1">
           <div>{currentDate.days.toString().padStart(2, "0")}</div>
           <div>:</div>

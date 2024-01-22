@@ -15,8 +15,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className="h-full">
       <body className="h-full overflow-hidden">
         <Navbar />
-        <div className="overflow-auto inner_page">{children}</div>
-        <Footer />
+        <div className="overflow-auto inner_page">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

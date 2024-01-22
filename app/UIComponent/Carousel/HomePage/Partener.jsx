@@ -7,7 +7,7 @@ export default function Partener() {
         padding: "32px 10%",
       }}
     >
-      <h1 className="text-center text-5xl font-bold mb-8">Endorsed By</h1>
+      <h1 className="text-center text-5xl font-bold mb-8">Supported By</h1>
       <div className="flex gap-4 flex-wrap justify-center partner_container">
         <div>
           <a href="http://www.drm.org" target="_blank">
