@@ -1,5 +1,5 @@
 import { Button, Menu, MenuItem } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function MenuCompoenent({ data, index, open, setOpen }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -8,9 +8,11 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
     setOpen(-1);
   };
   const handleClick = (e) => {
+    e.stopPropagation();
     setAnchorEl(e.currentTarget);
     setOpen(index);
   };
+
   return (
     <>
       <div className="flex items-end">

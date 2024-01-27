@@ -1,0 +1,29 @@
+.boxContainer label {
+  font-weight: 500;
+  font-size: 20px;
+}
+.container {
+  min-width: 350px;
+  width: 80%;
+  max-width: 620px;
+  margin: auto;
+  border: 1px solid firebrick;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+.btn_container {
+  width: 96%;
+  margin: auto;
+}
+.submit_btn {
+  background-color: #1c94d2;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: white;
+  padding: 10px;
+  position: relative;
+}
+.submit_btn:hover {
+  background-color: white;
+  color: black;
+}

@@ -12,7 +12,7 @@ export default function Countdown({ from }) {
     timerRef.current = setInterval(() => {
       let currentDate = Date.now();
       let eventTime = new Date(from).getTime(); //Feb 16 , 2024 10:00:00 GMT+0530
-      let difference = eventTime - currentDate;
+      let difference = eventTime - currentDate - 60 * 60 * 1000 * 24;
       if (difference > 0) {
         let differenceDate = new Date(difference);
         let obj = {
@@ -38,7 +38,7 @@ export default function Countdown({ from }) {
     return () => clearInterval(timerRef.current);
   }, []);
   return (
-    <div className="absolute z-[2] w-full  bottom-[-67px]">
+    <div className="absolute z-[2] w-full  bottom-[-67px] ">
       <div className="coundown  px-[45px] py-[30px]">
         <div className="flex gap-1">
           <div>{currentDate.days.toString().padStart(2, "0")}</div>

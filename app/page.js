@@ -25,7 +25,7 @@ export default function Home() {
           }}
         ></div>
         <HomePageCarousel data={data} url={"/Images/Slider/2023"} />
-        <Countdown from={"Feb 16 , 2024 10:00:00 GMT+0530"} />
+        <Countdown from={"Feb 15 , 2024 10:00:00 GMT+0530"} />
       </div>
 
       <YoutubeThumbnail />

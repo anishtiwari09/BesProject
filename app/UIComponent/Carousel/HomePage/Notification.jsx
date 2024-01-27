@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 import BasicCarousel from "./BasicCarousel";
+import Link from "next/link";
 
 export default function Notification() {
   return (
@@ -43,24 +44,28 @@ export default function Notification() {
         Book Your Space
       </h2>
       <div className="flex gap-2 justify-center mt-4">
-        <Button
-          className="bg-orange-400"
-          variant="contained"
-          sx={{
-            "&:hover": { background: "orange" },
-          }}
-        >
-          Visitor Registration
-        </Button>
-        <Button
-          variant="contained"
-          className="bg-orange-400"
-          sx={{
-            "&:hover": { background: "orange" },
-          }}
-        >
-          Delegate Registration
-        </Button>
+        <Link href={"/registrationform/visitor"}>
+          <Button
+            className="bg-orange-400"
+            variant="contained"
+            sx={{
+              "&:hover": { background: "orange" },
+            }}
+          >
+            Visitor Registration
+          </Button>
+        </Link>
+        <Link href={"/registrationform/delegateregistration"}>
+          <Button
+            variant="contained"
+            className="bg-orange-400"
+            sx={{
+              "&:hover": { background: "orange" },
+            }}
+          >
+            Delegate Registration
+          </Button>
+        </Link>
       </div>
     </div>
   );
