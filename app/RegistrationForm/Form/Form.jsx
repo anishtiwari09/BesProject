@@ -11,6 +11,7 @@ import {
 import React, { useRef, useState } from "react";
 import styles from "./form.module.css";
 import { numberValidator, emailValidator } from "@/app/Utility/validator";
+import PleaseWaitLoader from "@/app/UIComponent/Loader/PleaseWaitLoader";
 export default function Form({ db, onClick }) {
   const [visitorDb, setVisitorDb] = useState(db);
   const [submit, setSubmit] = useState(false);
