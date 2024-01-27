@@ -11,6 +11,7 @@ export default function Notification() {
         animation="slide"
         duration={500}
         cycleNavigation={true}
+        indicators={false}
       >
         <React.Fragment>
           <h4 className="font-bold text-3xl text-white text-center m-auto w-[90%] ubuntu_font .conference_text">
