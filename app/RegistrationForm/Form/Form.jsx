@@ -1,14 +1,14 @@
 "use client";
 import {
-  Box,
   Button,
   FormControl,
   FormHelperText,
   MenuItem,
   Select,
   TextField,
+  TextareaAutosize,
 } from "@mui/material";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./form.module.css";
 import { numberValidator, emailValidator } from "@/app/Utility/validator";
 export default function Form({ db, onClick }) {
@@ -86,6 +86,13 @@ export default function Form({ db, onClick }) {
                       </FormHelperText>
                     )}
                   </FormControl>
+                ) : item?.type === "textarea" ? (
+                  <AutoSizeTextarea
+                    value={item.value || ""}
+                    index={key}
+                    state={visitorDb}
+                    dispatcher={setVisitorDb}
+                  />
                 ) : (
                   <TextField
                     error={item?.showError}
@@ -118,3 +125,43 @@ export default function Form({ db, onClick }) {
     </React.Fragment>
   );
 }
+
+const useStyles = {
+  autoSizeTextarea: {
+    width: "100%",
+    minWidth: "100px",
+    minHeight: "150px",
+    resize: "none",
+    padding: "8px 12px",
+    fontFamily: "inherit",
+    fontSize: "inherit",
+    lineHeight: "inherit",
+    boxSizing: "border-box",
+    border: "1px solid #ccc",
+    borderRadius: "4px",
+    outline: "none",
+  },
+};
+const AutoSizeTextarea = ({ index, value, dispatcher, state }) => {
+  const textareaRef = useRef(null);
+  const handleTextareaChange = (event) => {
+    state[index].value = event.target.value;
+    if (textareaRef.current) {
+      textareaRef.current.style.height = "auto";
+      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
+    }
+    dispatcher([...state]);
+  };
+  return (
+    <React.Fragment>
+      <TextareaAutosize
+        ref={textareaRef}
+        style={useStyles.autoSizeTextarea}
+        value={value}
+        onChange={handleTextareaChange}
+        fullWidth
+        // Minimum number of rows
+      />
+    </React.Fragment>
+  );
+};
