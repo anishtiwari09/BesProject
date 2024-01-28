@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className="h-full overflow-hidden">
         <Navbar />
         <div className="overflow-auto inner_page">
-          {children}
+          <div className="body_page">{children}</div>
           <Footer />
         </div>
       </body>

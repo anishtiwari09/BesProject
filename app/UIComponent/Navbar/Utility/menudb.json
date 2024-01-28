@@ -2,14 +2,14 @@
   {
     "id": 1,
     "name": "About BES India",
-    "path": "",
+    "path": "/about_bes",
     "haveChildren": "yes",
     "isExpandable": true,
     "subChildren": [
       {
         "id": 1,
         "name": "At a Glance",
-        "path": "",
+        "path": "/at_glance",
         "haveChildren": "no",
         "isExpandable": false,
         "subChildren": []
@@ -17,7 +17,7 @@
       {
         "id": 2,
         "name": "Background",
-        "path": "",
+        "path": "/background",
         "haveChildren": "no",
         "isExpandable": false,
         "subChildren": []
@@ -25,7 +25,7 @@
       {
         "id": 3,
         "name": "Aims and objectives",
-        "path": "",
+        "path": "/aim_and_objective",
         "haveChildren": "no",
         "isExpandable": false,
         "subChildren": []
@@ -33,7 +33,7 @@
       {
         "id": 4,
         "name": "Executive Council",
-        "path": "",
+        "path": "/executive_council",
         "haveChildren": "no",
         "isExpandable": false,
         "subChildren": []
@@ -41,7 +41,7 @@
       {
         "id": 5,
         "name": "Committees",
-        "path": "",
+        "path": "/committees",
         "haveChildren": "no",
         "isExpandable": false,
         "subChildren": []
@@ -49,7 +49,7 @@
       {
         "id": 6,
         "name": "Membership",
-        "path": "",
+        "path": "/membership",
         "haveChildren": "no",
         "isExpandable": false,
         "subChildren": []
@@ -57,7 +57,7 @@
       {
         "id": 7,
         "name": "Contact us",
-        "path": "",
+        "path": "/contact_us",
         "haveChildren": "no",
         "isExpandable": false,
         "subChildren": []
@@ -65,7 +65,7 @@
       {
         "id": 8,
         "name": "FAQ",
-        "path": "",
+        "path": "/faq",
         "haveChildren": "no",
         "isExpandable": false,
         "subChildren": []
@@ -73,15 +73,7 @@
       {
         "id": 9,
         "name": "Feedback",
-        "path": "",
-        "haveChildren": "no",
-        "isExpandable": false,
-        "subChildren": []
-      },
-      {
-        "id": 10,
-        "name": "Back to top",
-        "path": "",
+        "path": "/feedback",
         "haveChildren": "no",
         "isExpandable": false,
         "subChildren": []

@@ -1,4 +1,6 @@
 import { Button, Menu, MenuItem } from "@mui/material";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 
 export default function MenuCompoenent({ data, index, open, setOpen }) {
@@ -12,6 +14,7 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
     setAnchorEl(e.currentTarget);
     setOpen(index);
   };
+  const pathName = usePathname();
 
   return (
     <>
@@ -20,10 +23,15 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
           aria-controls={"basic-menu"}
           onMouseEnter={handleClick}
           className="text-white"
+          style={{ color: "white" }}
         >
           <a
             className={`header2_menu_list ${
-              open ? "header2_menu_list_open" : ""
+              open
+                ? "header2_menu_list_open"
+                : pathName.startsWith(data.path) && data.path
+                ? "header2_menu_list_open"
+                : ""
             }`}
           >
             {data?.name}
@@ -46,13 +54,17 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
                       <h3 className="font-bold">{item?.name}</h3>
                       <ul className="p-2 flex-col gap-1 flex">
                         {item.subChildren?.map((sub_item, sub_key) => (
-                          <li key={sub_item.id}>{sub_item.name}</li>
+                          <li key={sub_item.id}>
+                            <Link href={data.path + item.path + sub_item.path}>
+                              {sub_item.name}
+                            </Link>
+                          </li>
                         ))}
                       </ul>
                     </div>
                   </>
                 ) : (
-                  item.name
+                  <Link href={data.path + item.path}>{item.name}</Link>
                 )}
               </MenuItem>
             ))}
