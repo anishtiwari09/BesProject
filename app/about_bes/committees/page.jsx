@@ -1,5 +1,5 @@
 import Content from "./Content";
-
+import db from "./db.json";
 export default function page() {
-  return <div>Committees</div>;
+  return <Content db={db} />;
 }

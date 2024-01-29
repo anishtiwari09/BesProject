@@ -6,6 +6,9 @@
   margin-right: 0;
   line-height: 26px;
 }
+.content_container a:hover {
+  border-bottom: 1px solid black;
+}
 .content_container .bullet_point {
   list-style-type: disc;
 }
