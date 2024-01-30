@@ -12,6 +12,14 @@
   padding: 30px;
   border-radius: 10px;
 }
+.container2 {
+  min-width: 350px;
+  width: 80%;
+  max-width: 620px;
+  margin: auto;
+
+  padding: 30px;
+}
 .btn_container {
   width: 96%;
   margin: auto;
