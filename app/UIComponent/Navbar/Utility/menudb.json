@@ -83,7 +83,7 @@
   {
     "id": 2,
     "name": "Events / Conference",
-    "path": "",
+    "path": "/event_conference",
     "haveChildren": "yes",
     "isExpandable": true,
     "subChildren": [
@@ -97,7 +97,7 @@
           {
             "id": 1,
             "name": "BES EXPO",
-            "path": "",
+            "path": "/bes_expo/history",
             "haveChildren": "no",
             "isExpandable": false,
             "subChildren": []

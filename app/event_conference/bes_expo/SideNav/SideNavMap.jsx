@@ -1,0 +1,31 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
+import styles from "../../../about_bes/SideNav/side.module.css";
+
+export default function SideNavMap({ db, parentPath }) {
+  const pathname = usePathname();
+
+  return (
+    <ul className="pl-2">
+      {db.map((item, key) => {
+        let temp = item?.isSeprateParentPath ? item.parentPath : parentPath;
+        return (
+          <li key={item.id}>
+            <Link
+              href={temp + item.path}
+              target={`${item?.path.endsWith(".pdf") ? "_blank" : "self"}`}
+              className={`${
+                pathname.endsWith(temp + item.path) ? styles.selected : ""
+              }`}
+            >
+              {item.name}
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
