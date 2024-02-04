@@ -1,7 +1,6 @@
 import { Button, Menu, MenuItem } from "@mui/material";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect } from "react";
+import React from "react";
 
 export default function MenuCompoenent({ data, index, open, setOpen }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -47,26 +46,33 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
             }}
           >
             {data.subChildren.map((item, key) => (
-              <MenuItem onClick={handleClose} key={item.id}>
+              <React.Fragment key={item.id}>
                 {item?.isExpandable && item?.subChildren.length ? (
-                  <>
-                    <div>
-                      <h3 className="font-bold">{item?.name}</h3>
-                      <ul className="p-2 flex-col gap-1 flex">
-                        {item.subChildren?.map((sub_item, sub_key) => (
-                          <li key={sub_item.id}>
-                            <Link href={data.path + item.path + sub_item.path}>
+                  <div>
+                    <h3 className="font-bold" style={{ padding: "6px 16px" }}>
+                      {item?.name}
+                    </h3>
+                    <ul className="flex-col gap-1 flex">
+                      {item.subChildren?.map((sub_item, sub_key) => (
+                        <li key={sub_item.id}>
+                          <MenuItem
+                            onClick={handleClose}
+                            style={{ padding: "6px 30px" }}
+                          >
+                            <a href={data.path + item.path + sub_item.path}>
                               {sub_item.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </>
+                            </a>
+                          </MenuItem>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ) : (
-                  <Link href={data.path + item.path}>{item.name}</Link>
+                  <MenuItem onClick={handleClose}>
+                    <a href={data.path + item.path}>{item.name}</a>
+                  </MenuItem>
                 )}
-              </MenuItem>
+              </React.Fragment>
             ))}
           </Menu>
         ) : (
