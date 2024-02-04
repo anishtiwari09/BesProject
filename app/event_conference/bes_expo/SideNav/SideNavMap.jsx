@@ -14,15 +14,28 @@ export default function SideNavMap({ db, parentPath }) {
         let temp = item?.isSeprateParentPath ? item.parentPath : parentPath;
         return (
           <li key={item.id}>
-            <Link
-              href={temp + item.path}
-              target={`${item?.path.endsWith(".pdf") ? "_blank" : "self"}`}
-              className={`${
-                pathname.endsWith(temp + item.path) ? styles.selected : ""
-              }`}
-            >
-              {item.name}
-            </Link>
+            {item?.isSeprateParentPath ? (
+              <a
+                href={temp + item.path}
+                target={`${item?.path.endsWith(".pdf") ? "_blank" : "_self"}`}
+                className={`${
+                  pathname.endsWith(temp + item.path) ? styles.selected : ""
+                }`}
+              >
+                {" "}
+                {item.name}
+              </a>
+            ) : (
+              <Link
+                href={temp + item.path}
+                target={`${item?.path.endsWith(".pdf") ? "_blank" : "_self"}`}
+                className={`${
+                  pathname.endsWith(temp + item.path) ? styles.selected : ""
+                }`}
+              >
+                {item.name}
+              </Link>
+            )}
           </li>
         );
       })}

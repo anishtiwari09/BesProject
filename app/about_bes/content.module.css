@@ -21,3 +21,9 @@
 .content_container p + .order_list {
   padding: 0 40px;
 }
+
+.style1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0000;
+}
