@@ -97,7 +97,7 @@
           {
             "id": 1,
             "name": "BES EXPO",
-            "path": "/bes_expo/history",
+            "path": "/bes_expo/exibition/history",
             "haveChildren": "no",
             "isExpandable": false,
             "subChildren": []

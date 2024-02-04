@@ -1,5 +1,6 @@
 import React from "react";
 import SideNav from "./SideNav/SideNav";
+import Enquiry from "./Enquiry/Enquiry";
 
 export default function layout({ children }) {
   return (
@@ -12,7 +13,12 @@ export default function layout({ children }) {
       <div className="min-w-[230px]">
         <SideNav />
       </div>
-      {children}
+      <div>
+        {children}
+        <br />
+        <br />
+        <Enquiry />
+      </div>
       <div></div>
     </div>
   );
