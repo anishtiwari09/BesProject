@@ -90,7 +90,7 @@
       {
         "id": 1,
         "name": "Forthcoming Events",
-        "path": "",
+        "path": "/forthcoming_events",
         "haveChildren": "yes",
         "isExpandable": true,
         "subChildren": [
@@ -105,7 +105,7 @@
           {
             "id": 2,
             "name": "Other Events",
-            "path": "",
+            "path": "/other_events",
             "haveChildren": "no",
             "isExpandable": false,
             "subChildren": [
@@ -191,9 +191,39 @@
   {
     "id": 5,
     "name": "Other",
-    "path": "",
+    "path": "/other",
     "haveChildren": "yes",
     "isExpandable": true,
-    "subChildren": []
+    "subChildren": [
+      {
+        "id": 1,
+        "name": "Userful Links",
+        "path": "/userful_links",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+
+      {
+        "id": 2,
+        "name": "Contact us",
+        "path": "/contact_us",
+        "parentPath": "/about_bes",
+        "isSeprateParentPath": true,
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+      {
+        "id": 3,
+        "name": "Became a Member",
+        "path": "/membership",
+        "parentPath": "/about_bes",
+        "isSeprateParentPath": true,
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      }
+    ]
   }
 ]
