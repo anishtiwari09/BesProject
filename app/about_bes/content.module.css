@@ -27,3 +27,32 @@
   font-weight: bold;
   color: #ff0000;
 }
+
+.unorder-list {
+  list-style-type: disc;
+}
+.order-list {
+  list-style-type: decimal;
+}
+.order-list li::marker {
+  font-weight: bold;
+  color: #003366;
+  font-size: 18px;
+}
+
+.table_border td,
+.table_border th {
+  border: 2px solid black;
+  text-align: center;
+}
+.order-list_subheading {
+  list-style-type: decimal;
+}
+.order-list_subheading li::marker {
+  font-weight: bold;
+  color: #003366;
+  font-size: 18px;
+}
+.order-list_subheading li {
+  padding-left: 10px;
+}
