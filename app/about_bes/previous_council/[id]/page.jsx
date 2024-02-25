@@ -1,5 +1,5 @@
 import React from "react";
-import Content from "./content";
+import Content from "./Content";
 
 export default function page({ params: { id } }) {
   let data = null;

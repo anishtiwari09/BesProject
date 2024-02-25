@@ -45,7 +45,9 @@ export default function Content({ db, council_data }) {
                   </StyledTableCell>
                   <StyledTableCell>
                     <img
-                      src={`/Images/${council_data}/` + item.img}
+                      src={
+                        `/Images/previous_council/${council_data}/` + item.img
+                      }
                       alt={item.name}
                       style={{ maxWidth: 90 }}
                     />
