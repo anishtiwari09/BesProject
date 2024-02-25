@@ -55,6 +55,14 @@
         "subChildren": []
       },
       {
+        "id": 6,
+        "name": "Previous Council",
+        "path": "/previous_council",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+      {
         "id": 7,
         "name": "Contact us",
         "path": "/contact_us",
