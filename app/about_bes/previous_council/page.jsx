@@ -23,8 +23,8 @@ export default function page() {
         </p>
 
         <ul>
-          {data.map((item) => (
-            <li>
+          {data.map((item, index) => (
+            <li key={index}>
               <Link
                 href={`/about_bes/previous_council/${item}`}
                 className="text-blue-500"
