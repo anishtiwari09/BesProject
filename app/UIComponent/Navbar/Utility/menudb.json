@@ -98,7 +98,7 @@
       {
         "id": 1,
         "name": "Forthcoming Events",
-        "path": "/forthcoming_events",
+        "path": "",
         "haveChildren": "yes",
         "isExpandable": true,
         "subChildren": [
@@ -117,14 +117,6 @@
             "haveChildren": "no",
             "isExpandable": false,
             "subChildren": [
-              {
-                "id": 1,
-                "name": "BES EXPO",
-                "path": "",
-                "haveChildren": "no",
-                "isExpandable": false,
-                "subChildren": []
-              },
               {
                 "id": 2,
                 "name": "Other Events",

@@ -50,38 +50,32 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
                 ? item?.parentPath
                 : data.path;
 
-              return (
-                <React.Fragment key={item.id}>
-                  {item?.isExpandable && item?.subChildren.length ? (
-                    <div>
-                      <h3 className="font-bold" style={{ padding: "6px 16px" }}>
-                        {item?.name}
-                      </h3>
-                      <ul className="flex-col gap-1 flex">
-                        {item.subChildren?.map((sub_item, sub_key) => {
-                          return (
-                            <li key={sub_item.id}>
-                              <MenuItem
-                                onClick={handleClose}
-                                style={{ padding: "6px 30px" }}
-                              >
-                                <a
-                                  href={parentPath + item.path + sub_item.path}
-                                >
-                                  {sub_item.name}
-                                </a>
-                              </MenuItem>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </div>
-                  ) : (
-                    <MenuItem onClick={handleClose}>
-                      <a href={parentPath + item.path}>{item.name}</a>
-                    </MenuItem>
-                  )}
-                </React.Fragment>
+              return item?.isExpandable && item?.subChildren.length ? (
+                <div key={key}>
+                  <h3 className="font-bold" style={{ padding: "6px 16px" }}>
+                    {item?.name}
+                  </h3>
+                  <ul className="flex-col gap-1 flex">
+                    {item.subChildren?.map((sub_item, sub_key) => {
+                      return (
+                        <li key={sub_item.id}>
+                          <MenuItem
+                            onClick={handleClose}
+                            style={{ padding: "6px 30px" }}
+                          >
+                            <a href={parentPath + item.path + sub_item.path}>
+                              {sub_item.name}
+                            </a>
+                          </MenuItem>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              ) : (
+                <MenuItem onClick={handleClose} key={key}>
+                  <a href={parentPath + item.path}>{item.name}</a>
+                </MenuItem>
               );
             })}
           </Menu>
