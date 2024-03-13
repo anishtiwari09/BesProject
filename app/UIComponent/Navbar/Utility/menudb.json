@@ -147,7 +147,9 @@
           {
             "id": 2,
             "name": "Seminars",
-            "path": "",
+            "path": "/seminars",
+            "parentPath": "/event_conference/other_events",
+            "isSeprateParentPath": true,
             "haveChildren": "no",
             "isExpandable": false,
             "subChildren": []

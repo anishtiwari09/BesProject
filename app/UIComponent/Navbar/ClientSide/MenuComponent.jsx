@@ -57,13 +57,16 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
                   </h3>
                   <ul className="flex-col gap-1 flex">
                     {item.subChildren?.map((sub_item, sub_key) => {
+                      let newPath = sub_item?.isSeprateParentPath
+                        ? sub_item?.parentPath
+                        : parentPath + item.path;
                       return (
                         <li key={sub_item.id}>
                           <MenuItem
                             onClick={handleClose}
                             style={{ padding: "6px 30px" }}
                           >
-                            <a href={parentPath + item.path + sub_item.path}>
+                            <a href={newPath + sub_item.path}>
                               {sub_item.name}
                             </a>
                           </MenuItem>
