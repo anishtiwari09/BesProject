@@ -13,13 +13,22 @@ export default function Countdown({ from }) {
       let currentDate = Date.now();
       let eventTime = new Date(from).getTime(); //Feb 16 , 2024 10:00:00 GMT+0530
       let difference = eventTime - currentDate - 60 * 60 * 1000 * 24;
+      difference = Math.floor(difference / 1000);
+
       if (difference > 0) {
-        let differenceDate = new Date(difference);
+        let calculateDay = 3600 * 24;
+        let days = Math.floor(difference / calculateDay);
+        let inSecond = difference % calculateDay;
+        let inHours = Math.floor(inSecond / 3600);
+        inSecond %= 3600;
+        let inMinute = Math.floor(inSecond / 60);
+        inSecond %= 60;
+
         let obj = {
-          days: differenceDate.getDate(),
-          hours: differenceDate.getHours(),
-          minutes: differenceDate.getMinutes(),
-          second: differenceDate.getSeconds(),
+          days: days,
+          hours: inHours,
+          minutes: inMinute,
+          second: inSecond,
         };
         setCurrentDate(obj);
       } else {
@@ -41,7 +50,11 @@ export default function Countdown({ from }) {
     <div className="absolute z-[2] w-full  bottom-[-67px] ">
       <div className="coundown  px-[45px] py-[30px]">
         <div className="flex gap-1">
-          <div>{currentDate.days.toString().padStart(2, "0")}</div>
+          <div>
+            {currentDate.days
+              .toString()
+              .padStart(Math.max(currentDate.days.toString().length, 2), "0")}
+          </div>
           <div>:</div>
           <div>{currentDate.hours.toString().padStart(2, "0")}</div>
           <div>:</div>

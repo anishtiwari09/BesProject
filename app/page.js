@@ -4,12 +4,16 @@ import HomePageCarousel from "./UIComponent/Carousel/HomePage/HomePageCarousel";
 import Notification from "./UIComponent/Carousel/HomePage/Notification";
 import Partener from "./UIComponent/Carousel/HomePage/Partener";
 import YoutubeThumbnail from "./UIComponent/Carousel/HomePage/YoutubeThumbnail";
+import { HOMEPAGE } from "./Utility/Constant";
 
 export default function Home() {
   const fs = require("fs");
   const path = require("path");
   let data = fs.readdirSync(
-    path.join(process.cwd(), "/public/Images/Slider/2023")
+    path.join(
+      process.cwd(),
+      "/public" + HOMEPAGE.sliderImageDir + HOMEPAGE.currentYear
+    )
   );
 
   return (
@@ -24,8 +28,20 @@ export default function Home() {
             background: "rgba(28, 32, 110, 0.5);",
           }}
         ></div>
-        <HomePageCarousel data={data} url={"/Images/Slider/2023"} />
-        <Countdown from={"Feb 15 , 2024 10:00:00 GMT+0530"} />
+        <HomePageCarousel
+          data={data}
+          url={HOMEPAGE.sliderImageDir + HOMEPAGE.currentYear}
+        />
+        <Countdown
+          from={
+            HOMEPAGE.expoStartDate.month +
+            " " +
+            HOMEPAGE.expoStartDate.date +
+            " , " +
+            HOMEPAGE.expoStartDate.year +
+            " 10:00:00 GMT+0530"
+          }
+        />{" "}
       </div>
 
       <YoutubeThumbnail />
