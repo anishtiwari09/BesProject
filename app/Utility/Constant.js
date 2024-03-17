@@ -5,5 +5,12 @@ export const HOMEPAGE = {
     date: "20",
     month: "Feb",
     year: 2025,
+    fullMonth: "February",
+  },
+  eventCount: "29th",
+  expoEndDate: {
+    date: "22",
+    fullMonth: "February",
+    year: 2025,
   },
 };

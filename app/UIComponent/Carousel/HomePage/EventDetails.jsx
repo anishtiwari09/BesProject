@@ -6,7 +6,8 @@ export default function EventDetails() {
     <div
       className="py-8"
       style={{
-        background: "#1c8bd280",
+        background:
+          "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%)",
       }}
     >
       <div className="w-full flex  flex-col">
@@ -17,14 +18,14 @@ export default function EventDetails() {
                 <Image
                   width={609}
                   height={395}
-                  src={"/Images/EventDetails/expo2023.jpg"}
+                  src={"/Images/EventDetails/expo2023.png"}
                 />
               </td>
               <td className="p-2">
                 <Image
                   width={310}
                   height={395}
-                  src={"/Images/EventDetails/bes.jpg"}
+                  src={"/Images/EventDetails/bes.jpeg"}
                 />
               </td>
             </tr>

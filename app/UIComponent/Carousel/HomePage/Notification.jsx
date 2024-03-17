@@ -2,6 +2,7 @@ import { Button } from "@mui/material";
 import React from "react";
 import BasicCarousel from "./BasicCarousel";
 import Link from "next/link";
+import { HOMEPAGE } from "@/app/Utility/Constant";
 
 export default function Notification() {
   return (
@@ -15,17 +16,18 @@ export default function Notification() {
       >
         <React.Fragment>
           <h4 className="font-bold text-3xl text-white text-center m-auto w-[90%] ubuntu_font .conference_text">
-            28th International Conference & Exhibition on Broadcast & Media
-            Technology
+            {HOMEPAGE.eventCount} International Conference & Exhibition on
+            Broadcast & Media Technology
           </h4>
           <h3 className="font-bold text-4xl text-[#faac1d] text-center m-auto mt-6">
-            15th to 17th February 2024
+            {HOMEPAGE.expoStartDate.date}th to {HOMEPAGE.expoEndDate.date}th{" "}
+            {HOMEPAGE.expoEndDate.fullMonth} 2024
           </h3>
         </React.Fragment>
         <React.Fragment>
           <h4 className="font-bold text-3xl text-white text-center m-auto w-[90%] ubuntu_font .conference_text">
-            28th International Conference & Exhibition on Broadcast & Media
-            Technology
+            {HOMEPAGE.eventCount} International Conference & Exhibition on
+            Broadcast & Media Technology
           </h4>
           <h3 className="font-bold text-4xl text-white text-center m-auto mt-6">
             15th to 17th February 2024
@@ -36,10 +38,10 @@ export default function Notification() {
       <h3 className="font-bold text-2xl text-white bg-[#ff008499] w-fit p-3 text-center m-auto mt-2">
         Hall No. 12A at Pragati Maidan, New Delhi
       </h3>
-      <div className="text-xl text-white w-fit m-auto text-center mt-4">
+      {/* <div className="text-xl text-white w-fit m-auto text-center mt-4">
         Evolving Media Ecosystem: Innovative, Immersive & Sustainable
         Broadcasting
-      </div>
+      </div> */}
       <h2 className="mt-4 font-bold text-4xl text-center m-auto text-white">
         {" "}
         Book Your Space
