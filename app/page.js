@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="relative">
       <div className="relative">
-        <div className="absolute -translate-y-1/2 z-[3] top-1/2 w-full">
+        <div className="absolute -translate-y-1/2 z-[3] top-1/2 w-full mobile_notification_css">
           <Notification />
         </div>
         <div

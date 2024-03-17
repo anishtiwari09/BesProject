@@ -13,15 +13,7 @@
 .ubuntu_font {
   font-family: Ubuntu, sans-serif;
 }
-.inner_page {
-  max-height: calc(100% - var(--header_height) - 0);
-  height: calc(100% - var(--header_height));
-}
-.body_page {
-  min-height: calc(100% - var(--footer_height));
-  display: flex;
-  flex-direction: column;
-}
+
 .youtbue_thumbnail_conainer {
   width: 100%;
   margin: auto;
@@ -110,4 +102,47 @@ a.header2_menu_list_open::before {
 .default_string_table a {
   color: #441066;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 692px) {
+  .event_details_text {
+    overflow-wrap: anywhere;
+  }
+  .coundown > div > div {
+    font-size: 32px;
+  }
+  .conference_text {
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  .conference_text2 {
+    margin: 0;
+    padding: 0;
+  }
+  .mobile_notification_css {
+    height: 100%;
+  }
+  .registration_btn {
+    margin: 0 !important;
+    font-size: 10px !important;
+  }
+  .contdown_container {
+    bottom: -108px;
+  }
+  .registration_btn_container {
+    margin: 0;
+  }
+  :root {
+    --header_height: 37px;
+  }
+}
+
+.inner_page {
+  max-height: calc(100% - var(--header_height) - 0);
+  height: calc(100% - var(--header_height));
+}
+.body_page {
+  min-height: calc(100% - var(--footer_height));
+  display: flex;
+  flex-direction: column;
 }
