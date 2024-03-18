@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import React from "react";
 import BasicCarousel from "./BasicCarousel";
 import Link from "next/link";
-import { HOMEPAGE } from "@/app/Utility/Constant";
+import { HOMEPAGE } from "../../../Utility/Constant";
 
 export default function Notification() {
   return (

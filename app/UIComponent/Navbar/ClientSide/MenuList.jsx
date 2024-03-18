@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import MenuCompoenent from "./MenuComponent";
-import { isMobile } from "@/app/Utility/device";
+import { isMobile } from "../../../Utility/device";
 import MobileMenuList from "./MobileMenu/MobileMenuList";
 
 export default function MenuList({ data }) {
