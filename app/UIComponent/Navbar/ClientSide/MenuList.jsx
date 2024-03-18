@@ -7,7 +7,7 @@ import MobileMenuList from "./MobileMenu/MobileMenuList";
 export default function MenuList({ data }) {
   let isMobileTest = useMemo(() => {
     if(typeof window==="object")
-    isMobile(window);
+    return isMobile(window);
   }, []);
   const [open, setOpen] = useState(-1);
   return isMobileTest  ? (
