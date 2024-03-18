@@ -5,8 +5,12 @@ import { isMobile } from "../../../Utility/device";
 import MobileMenuList from "./MobileMenu/MobileMenuList";
 
 export default function MenuList({ data }) {
+  let isMobileTest = useMemo(() => {
+    if(typeof window==="object")
+    isMobile(window);
+  }, []);
   const [open, setOpen] = useState(-1);
-  return isMobile ? (
+  return isMobileTest  ? (
     <MobileMenuList data={data} />
   ) : (
     <div className="flex justify-center">

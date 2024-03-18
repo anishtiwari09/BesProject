@@ -1,4 +1,5 @@
-export const isMobile = (() => {
+export const isMobile = (window) => {
+  console.log({window})
   let navigator=window?.navigator||{}
   if (
     typeof navigator === "undefined" ||
@@ -7,4 +8,4 @@ export const isMobile = (() => {
     return false;
   }
   return /Mobile/.test(navigator.userAgent);
-})();
+};
