@@ -1,5 +1,5 @@
 export const isMobile = (() => {
-  console.log(navigator);
+  let navigator=window?.navigator||{}
   if (
     typeof navigator === "undefined" ||
     typeof navigator.userAgent !== "string"
