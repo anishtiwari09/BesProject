@@ -10,7 +10,7 @@ export default function MenuList({ data }) {
     return isMobile(window);
   }, []);
   const [open, setOpen] = useState(-1);
-  return isMobileTest  ? (
+  return isMobileTest===undefined?"":isMobileTest  ? (
     <MobileMenuList data={data} />
   ) : (
     <div className="flex justify-center">
