@@ -21,7 +21,7 @@ export default function Notification() {
           </h4>
           <h3 className="font-bold text-4xl text-[#faac1d] text-center m-auto mt-6 conference_text conference_text2">
             {HOMEPAGE.expoStartDate.date}th to {HOMEPAGE.expoEndDate.date}th{" "}
-            {HOMEPAGE.expoEndDate.fullMonth} 2024
+            {HOMEPAGE.expoEndDate.fullMonth} {HOMEPAGE.expoEndDate.year}
           </h3>
         </React.Fragment>
         <React.Fragment>
@@ -30,7 +30,8 @@ export default function Notification() {
             Broadcast & Media Technology
           </h4>
           <h3 className="font-bold text-4xl text-white text-center m-auto mt-6 conference_text conference_text2">
-            15th to 17th February 2024
+          {HOMEPAGE.expoStartDate.date}th to {HOMEPAGE.expoEndDate.date}th{" "}
+            {HOMEPAGE.expoEndDate.fullMonth} {HOMEPAGE.expoEndDate.year}
           </h3>
         </React.Fragment>
       </BasicCarousel>
