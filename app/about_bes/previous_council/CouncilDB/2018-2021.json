@@ -1,23 +1,23 @@
 [
   {
-    "name": "Shri Sunil",
+    "name": "Shri C.B.S. Maurya",
     "design": "President, BES (I)",
-    "email": "sunil.ddi@gmail.com",
-    "img": "sunil.jpg",
+    "email": "cbsmaurya@gmail.com",
+    "img": "CBSMaurya.jpg",
     "id": 1
   },
   {
-    "name": "Shri C.B.S. Maurya",
+    "name": "Shri I.I.George",
     "design": "Immediate Past President, BES (I)",
-    "email": "cbsmaurya@gmail.com",
-    "img": "CBSMaurya.jpg",
+    "email": "iigeorge@hotmail.com",
+    "img": "iigeorge.jpg",
     "id": 2
   },
   {
-    "name": "Shri I.I.George",
+    "name": "Shri O.K. Sharma",
     "design": "Past President, BES (I)",
-    "email": "iigeorge@hotmail.com",
-    "img": "iigeorge.jpg",
+    "email": "omajmer@gmail.com",
+    "img": "oksharma.jpg",
     "id": 3
   },
   {
@@ -35,17 +35,17 @@
     "id": 5
   },
   {
-    "name": "Shri P.S. Srivastava",
+    "name": "Ashish Bhatnagar",
     "design": "Vice President",
-    "email": "pss_18@yahoo.com",
-    "img": "pssrivastava.jpg",
+    "email": "abroadcaster0@gmail.com",
+    "img": "AshishBhatnagar.jpg",
     "id": 6
   },
   {
-    "name": "Shri K.K. Rao",
-    "design": "Vice President",
-    "email": "krishnarao73@yahoo.co.in",
-    "img": "kkrao.jpg",
+    "name": "Shri Surender Singh",
+    "design": "Council Member",
+    "email": "surendersingh1967@rediffmail.com",
+    "img": "SurenderSingh.jpg",
     "id": 7
   },
   {
@@ -56,45 +56,95 @@
     "id": 8
   },
   {
-    "name": "Shri A.K. Jha",
+    "name": "Shri R. Ghosh Dastidar",
     "design": "Council Member",
-    "email": "jhashok@gmail.com",
-    "img": "akjha.jpeg",
+    "email": "rgdastidar@hotmail.com",
+    "img": "RGhoshDastidar.jpg",
     "id": 9
+  },
+  {
+    "name": "Shri Deepak Joshi",
+    "design": "Council Member",
+    "email": "dde.deepakjoshi@gmail.com ",
+    "img": "deepakjoshi.jpg",
+    "id": 10
+  },
+  {
+    "name": "Shri A.V.Swaminathan",
+    "design": "Council Member",
+    "email": "swami232@rediffmail.com",
+    "img": "avswaminathan.jpg",
+    "id": 11
+  },
+  {
+    "name": "Shri Rajesh Meena",
+    "design": "Council Member",
+    "email": "rajeshmeena_29@rediffmail.com",
+    "img": "RajeshMeena.jpg",
+    "id": 12
+  },
+  {
+    "name": "Shri N.Thiyagarajan",
+    "design": "Council Member",
+    "email": "thiagu2k@rediffmail.com",
+    "img": "N.Thiyagarajan.jpg",
+    "id": 13
   },
   {
     "name": "Shri Rajeev Kumar",
     "design": "Council Member",
-    "email": "rajeev00kumar@yahoo.com ",
+    "email": "rajeev00kumar@yahoo.com",
     "img": "RajeevKumar.jpg",
-    "id": 10
-  },
-  {
-    "name": "Shri Surender Singh",
-    "design": "Council Member",
-    "email": "surendersingh1967@rediffmail.com",
-    "img": "SurenderSingh.jpg",
-    "id": 11
-  },
-  {
-    "name": "Shri Ved Prakash",
-    "design": "Council Member",
-    "email": "vedprakash67@gmail.com",
-    "img": "vedprakash.jpg",
-    "id": 12
-  },
-  {
-    "name": "Ms Meenakshi Singhvi",
-    "design": "Council Member",
-    "email": "meenakshisinghvi13@gmail.com",
-    "img": "meenakshisinghvi.jpg",
-    "id": 13
-  },
-  {
-    "name": "Shri Prakash veer",
-    "design": "Council Member",
-    "email": "pvt_1967@yahoo.com",
-    "img": "prakashveer.jpg",
     "id": 14
+  },
+  {
+    "name": "Shri Rajender Kumar",
+    "design": "Council Member",
+    "email": "rkumar1541966@yahoo.co.in",
+    "img": "RajenderKumar.jpg",
+    "id": 15
+  },
+  {
+    "name": "Ms. Anila B. Shah",
+    "design": "Council Member",
+    "email": "shahanila20@gmail.com",
+    "img": "anilashah.jpg",
+    "id": 16
+  },
+  {
+    "name": "Shri V. Appakutty",
+    "design": "Council Member",
+    "email": "appakuttyv@yahoo.com",
+    "img": "vappakutty.jpg",
+    "id": 17
+  },
+  {
+    "name": "Shri P.S. Sundaram",
+    "design": "Special Invitee",
+    "email": "pss@technomediaindia.com",
+    "img": "Sundaram.jpg",
+    "id": 18
+  },
+  {
+    "name": "Shri George Kuruvilla",
+    "design": "Special Invitee",
+    "email": "george@becil.com",
+    "img": "GeorgeKuruvila.jpg",
+    "id": 19
+  },
+  {
+    "name": "Shri Prof. M. Kasim",
+    "design": "Council Member ( Co-opted )",
+    "email": "mkasim@jmi.ac.in",
+    "img": "MKasim.jpg",
+    "id": 20
+  },
+
+  {
+    "name": "Shri Rajat Nigam",
+    "design": "Council Member ( Co-opted )",
+    "email": "rajat.nigam@nw18.com",
+    "img": "RajatNigam.jpg",
+    "id": 21
   }
 ]
