@@ -44,13 +44,17 @@ export default function Content({ db, council_data }) {
                     <Link href={"mailto:" + item.emal}>{item.email}</Link>
                   </StyledTableCell>
                   <StyledTableCell>
-                    <img
-                      src={
-                        `/Images/previous_council/${council_data}/` + item.img
-                      }
-                      alt={item.name}
-                      style={{ maxWidth: 90 }}
-                    />
+                    {item?.img ? (
+                      <img
+                        src={
+                          `/Images/previous_council/${council_data}/` + item.img
+                        }
+                        alt={item.name}
+                        style={{ maxWidth: 90 }}
+                      />
+                    ) : (
+                      ""
+                    )}
                   </StyledTableCell>
                 </StyledTableRow>
               );
