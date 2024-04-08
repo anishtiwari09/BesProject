@@ -52,12 +52,6 @@ export default function EventDetails() {
               <td className="p-2 font-bold text-[#1e1f36] event_details_text">
                 For Exhibition: The Coordinator BES EXPO
                 <br />
-                F-6, Shopping Complex, Madan Lal Block
-                <br />
-                Asian Games Village, New Delhi-110049
-                <br />
-                Tel: 91-11-26492444
-                <br />
                 E-mail: exhibition@besindia.com
               </td>
             </tr>
