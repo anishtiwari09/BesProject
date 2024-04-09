@@ -1,8 +1,9 @@
 import { Button, Menu, MenuItem } from "@mui/material";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 export default function MenuCompoenent({ data, index, open, setOpen }) {
+  const timerRef = useRef(null);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClose = (index) => {
     setAnchorEl(null);
@@ -15,6 +16,14 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
   };
   const pathName = usePathname();
 
+  const handleMouseMovement = (e) => {
+    if (e.target.className?.includes("MuiBackdrop-invisible")) handleClose();
+  };
+  useEffect(() => {
+    return () => {
+      clearTimeout(timerRef.current);
+    };
+  }, []);
   return (
     <>
       <div className="flex items-end">
@@ -22,7 +31,11 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
           aria-controls={"basic-menu"}
           onMouseEnter={handleClick}
           className="text-white"
-          style={{ color: "white" }}
+          style={{
+            color: "white",
+            position: "relative",
+            zIndex: 1301,
+          }}
         >
           <a
             className={`header2_menu_list ${
@@ -40,10 +53,13 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
           <Menu
             open={open}
             anchorEl={anchorEl}
+            onMouseMove={handleMouseMovement}
             onClose={handleClose}
+            className="menu_drop"
             MenuListProps={{
               "aria-labelledby": "basic-button",
             }}
+            id="menu_drop"
           >
             {data.subChildren.map((item, key) => {
               let parentPath = item?.isSeprateParentPath
