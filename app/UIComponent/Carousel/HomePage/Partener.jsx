@@ -25,12 +25,7 @@ export default function Partener() {
             <img src="/Images/expo2020/Supported2.jpg" border="0" />
           </a>
         </div>
-        <div>
-          <a href="http://www.meity.gov.in" target="_blank">
-            {" "}
-            <img src="/Images/expo2020/Supported2.jpg" border="0" />
-          </a>
-        </div>
+
         <div>
           <a href="http://www.prasarbharati.gov.in" target="_blank">
             <img src="/Images/expo2020/Supported4.jpg" border="0" />
