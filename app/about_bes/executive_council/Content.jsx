@@ -11,6 +11,7 @@ import {
   tableCellClasses,
 } from "@mui/material";
 import Link from "next/link";
+import { OTHERPAGE } from "@/app/Utility/Constant";
 export default function Content({ db }) {
   return (
     <div
@@ -20,7 +21,7 @@ export default function Content({ db }) {
     >
       <h2 className="text-[26px] font-bold">BES Executive Council</h2>
       <h3 className="text-[18px] font-bold mt-2">
-        BES Executive Council 2021-23
+        BES Executive Council {OTHERPAGE.currentCouncil}
       </h3>
       <div>
         <Table>
@@ -44,11 +45,15 @@ export default function Content({ db }) {
                     <Link href={"mailto:" + item.emal}>{item.email}</Link>
                   </StyledTableCell>
                   <StyledTableCell>
-                    <img
-                      src={"/Images/excecutive_council/" + item.img}
-                      alt={item.name}
-                      style={{ maxWidth: 90 }}
-                    />
+                    {item.img ? (
+                      <img
+                        src={"/Images/excecutive_council/" + item.img}
+                        alt={item.name}
+                        style={{ maxWidth: 90 }}
+                      />
+                    ) : (
+                      ""
+                    )}
                   </StyledTableCell>
                 </StyledTableRow>
               );

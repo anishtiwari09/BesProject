@@ -1,25 +1,26 @@
 [
   {
-    "name": "Shri Sunil",
+    "name": "Shri Mukesh Kumar",
     "design": "President, BES (I)",
-    "email": "sunil.ddi@gmail.com",
-    "img": "sunil.jpg",
+    "email": "mukeshkumar1965@gmail.com",
+    "img": "",
     "id": 1
   },
   {
-    "name": "Shri C.B.S. Maurya",
+    "name": "Shri Sunil",
     "design": "Immediate Past President, BES (I)",
-    "email": "cbsmaurya@gmail.com",
-    "img": "CBSMaurya.jpg",
+    "email": "sunil.ddi@gmail.com",
+    "img": "sunil.jpg",
     "id": 2
   },
   {
-    "name": "Shri I.I.George",
+    "name": "Shri C.B.S. Maurya",
     "design": "Past President, BES (I)",
-    "email": "iigeorge@hotmail.com",
-    "img": "iigeorge.jpg",
+    "email": "cbsmaurya@gmail.com",
+    "img": "CBSMaurya.jpg",
     "id": 3
   },
+
   {
     "name": "Shri Aftab Ahmad",
     "design": "Hon. Secretary",
@@ -28,73 +29,102 @@
     "id": 4
   },
   {
-    "name": "Shri O.P Rajpurohit",
+    "name": "Shri Manoj Gupta",
     "design": "Hon. Treasurer BES(I)",
-    "email": "oprajpurohit@yahoo.com",
-    "img": "oprajpurohit.jpg",
+    "email": "manoj.gupta@prasarbharati.gov.in",
+    "img": "",
     "id": 5
-  },
-  {
-    "name": "Shri P.S. Srivastava",
-    "design": "Vice President",
-    "email": "pss_18@yahoo.com",
-    "img": "pssrivastava.jpg",
-    "id": 6
   },
   {
     "name": "Shri K.K. Rao",
     "design": "Vice President",
     "email": "krishnarao73@yahoo.co.in",
     "img": "kkrao.jpg",
+    "id": 6
+  },
+  {
+    "name": "Shri Devesh Kumar Sachan",
+    "design": "Vice President",
+    "email": "dksachan08@gmail.com",
+    "img": "",
     "id": 7
   },
   {
-    "name": "Shri Dinesh Pratap Singh",
+    "name": "Shri Archana M. Gupta",
     "design": "Council Member",
-    "email": "dpsddi@gmail.com",
-    "img": "dineshpratapsingh.jpg",
+    "email": "archanaddi@rediffmail.com",
+    "img": "",
     "id": 8
   },
   {
-    "name": "Shri A.K. Jha",
+    "name": "Shri P.S. Srivastava",
     "design": "Council Member",
-    "email": "jhashok@gmail.com",
-    "img": "akjha.jpeg",
+    "email": "pss_18@yahoo.com",
+    "img": "",
     "id": 9
+  },
+  {
+    "name": "Shri C.K. Jain",
+    "design": "Council Member",
+    "email": "ckjaindd@gmail.com",
+    "img": "",
+    "id": 10
+  },
+  {
+    "name": "Shri Sandeep Srivastava",
+    "design": "Council Member",
+    "email": "sandeep@prasarbharati.gov.in",
+    "img": "",
+    "id": 11
+  },
+  {
+    "name": "Shri P. Das",
+    "design": "Council Member",
+    "email": "pdasdelhi@gmail.com",
+    "img": "",
+    "id": 12
   },
   {
     "name": "Shri Rajeev Kumar",
     "design": "Council Member",
     "email": "rajeev00kumar@yahoo.com ",
     "img": "RajeevKumar.jpg",
-    "id": 10
-  },
-  {
-    "name": "Shri Surender Singh",
-    "design": "Council Member",
-    "email": "surendersingh1967@rediffmail.com",
-    "img": "SurenderSingh.jpg",
-    "id": 11
-  },
-  {
-    "name": "Shri Ved Prakash",
-    "design": "Council Member",
-    "email": "vedprakash67@gmail.com",
-    "img": "vedprakash.jpg",
-    "id": 12
-  },
-  {
-    "name": "Ms Meenakshi Singhvi",
-    "design": "Council Member",
-    "email": "meenakshisinghvi13@gmail.com",
-    "img": "meenakshisinghvi.jpg",
     "id": 13
   },
+
   {
-    "name": "Shri Prakash veer",
+    "name": "Shri Shailesh Kumar Kanauje",
     "design": "Council Member",
-    "email": "pvt_1967@yahoo.com",
-    "img": "prakashveer.jpg",
+    "email": "shaileshkanauje@rediffmail.com",
+    "img": "",
     "id": 14
+  },
+  {
+    "name": "Shri K. Murugan",
+    "design": "Council Member",
+    "email": "murugan_dde@rediffmail.com",
+    "img": "",
+    "id": 15
+  },
+  {
+    "name": "Shri Rajesh Kumar Sharma",
+    "design": "Council Member",
+    "email": "rksharma@prasarbharati.gov.in",
+    "img": "",
+    "id": 16
+  },
+  {
+    "name": "Shri Abhishek Agrawal",
+    "design": "Council Member",
+    "email": "abhiagra31@gmail.com",
+    "img": "",
+    "id": 17
+  },
+  {
+    "name": "Shri M.P. Singh",
+    "design": "Council Member",
+    "email": "mpsinghwin@rediffmail.com",
+    "img": "",
+    "id": 18
   }
 ]

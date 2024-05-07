@@ -14,3 +14,7 @@ export const HOMEPAGE = {
     year: 2025,
   },
 };
+
+export const OTHERPAGE = {
+  currentCouncil: "2024-26",
+};
