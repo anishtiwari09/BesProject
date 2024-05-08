@@ -84,17 +84,42 @@
     "id": 12
   },
   {
+    "name": "Shri P. Das",
+    "design": "Council Member",
+    "email": "pdasdelhi@gmail.com",
+    "img": "",
+    "id": 13
+  },
+
+  {
+    "name": "Shri Aditya Chaturvedi",
+    "design": "Council Member",
+    "email": "adityachaturvedi75@hotmail.com ",
+    "img": "",
+    "id": 14
+  },
+
+  {
     "name": "Ms Meenakshi Singhvi",
     "design": "Council Member",
     "email": "meenakshisinghvi13@gmail.com",
     "img": "meenakshisinghvi.jpg",
-    "id": 13
+    "id": 15
   },
+
+  {
+    "name": "Shri Raju Varghese",
+    "design": "Council Member",
+    "email": "varj34@hotmail.com ",
+    "img": "",
+    "id": 16
+  },
+
   {
     "name": "Shri Prakash veer",
     "design": "Council Member",
     "email": "pvt_1967@yahoo.com",
     "img": "prakashveer.jpg",
-    "id": 14
+    "id": 17
   }
 ]
