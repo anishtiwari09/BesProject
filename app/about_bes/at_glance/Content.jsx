@@ -9,7 +9,7 @@ export default function Content() {
     >
       <h2 className="text-[26px] font-bold">At Glance</h2>
       <div>
-        <p>
+        <p text-align: justify>
           The Broadcast Engineering Society (India) was established in 1987 and
           is registered with the Registrar of Societies, Delhi, India. The
           Society has it’s headquarter at New Delhi and has 12 Local Chapters
