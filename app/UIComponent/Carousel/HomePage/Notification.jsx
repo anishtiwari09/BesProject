@@ -54,7 +54,7 @@ export default function Notification() {
         <a
           className="block w-fit py-[10px] px-3 bg-[#ffcc00] border-box  hover:bg-[#ec008c] delay-[300ms] transition-all text-black text-[15px] cursor-pointer hover:text-white uppercase"
           target="_blank"
-          href="/pdf/others/bes_event_presentation_2024.pdf"
+          href="/pdf/others/bes_event_presentation_20241.pdf"
         >
           BES Expo 2024 Presentation
         </a>
