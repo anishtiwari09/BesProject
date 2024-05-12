@@ -18,14 +18,14 @@ export default function EventDetails() {
                 <Image
                   width={609}
                   height={395}
-                  src={"/Images/EventDetails/expo2023.png"}
+                  src={"/Images/EventDetails/expo2025.jpg"}
                 />
               </td>
               <td className="p-2">
                 <Image
                   width={310}
                   height={395}
-                  src={"/Images/EventDetails/bes.jpeg"}
+                  src={"/Images/EventDetails/bes5.jpg"}
                 />
               </td>
             </tr>

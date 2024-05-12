@@ -287,8 +287,24 @@ export default function Content() {
                 <br />
                 Email: bes@besinida.com
                 <br />
-                Download Membership form for LM/LF/AM/SM/AM <br />
-                Download membership Form for Life Corporate Member
+                <a
+                  className="text-[#0000EE] underline cursor-pointer hover:border-0"
+                  style={{ borderBottom: 0 }}
+                  href="/pdf/membership/aem.pdf"
+                  target="_blank"
+                >
+                  Download
+                </a>{" "}
+                Membership form for LM/LF/AM/SM/AM <br />
+                <a
+                  className="text-[#0000EE] underline cursor-pointer hover:border-0"
+                  style={{ borderBottom: 0 }}
+                  href="/pdf/membership/corporatemembershipform11.pdf"
+                  target="_blank"
+                >
+                  Download
+                </a>{" "}
+                Membership Form for Life Corporate Member
                 <br />
               </p>
             </div>
