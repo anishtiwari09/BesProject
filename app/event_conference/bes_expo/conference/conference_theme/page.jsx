@@ -10,8 +10,8 @@ export default function page() {
       <div>
         <p>
           The theme for the conference is{" "}
-          <strong>Next-Gen Broadcasting: Create, Connect & Capitalise.</strong>{" "}
-          With more than 1,000 delegates, speakers and panelists from India and
+          <strong>BES EXPO attended</strong>{" "}
+          by more than 1,000 delegates, speakers and panelists from India and
           abroad, the conference is rated as the biggest in Asia. It is an ideal
           forum to know the direction broadcasting in India is going to take in
           years to come.
