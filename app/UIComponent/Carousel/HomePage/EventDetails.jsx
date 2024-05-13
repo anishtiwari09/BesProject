@@ -39,7 +39,7 @@ export default function EventDetails() {
             </tr>
             <tr>
               <td className="p-2 font-bold text-[#1e1f36] event_details_text">
-                For Conference: The Chairman Conference Committee
+                For Conference: <br/>The Chairman Conference Committee
                 <br />
                 BES EXPO, 912 Surya Kiran Building
                 <br />
@@ -50,7 +50,7 @@ export default function EventDetails() {
                 E-mail: conference@besindia.com, bes@besindia.com
               </td>
               <td className="p-2 font-bold text-[#1e1f36] event_details_text">
-                For Exhibition: The Coordinator BES EXPO
+                For Exhibition: <br/>The Coordinator BES EXPO
                 <br />
                 E-mail: exhibition@besindia.com
               </td>
