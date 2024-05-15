@@ -7,7 +7,7 @@ export default function Content() {
         "flex flex-col max-w-[800px] m-auto p-4 " + styles.content_container
       }
     >
-      <h2 className="text-[26px] font-bold">At Glance</h2>
+      <h2 className="text-[26px] font-bold">At a Glance</h2>
       <div>
         <p>
           The Broadcast Engineering Society (India) was established in 1987 and
