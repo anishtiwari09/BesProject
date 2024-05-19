@@ -11,7 +11,7 @@ export default function page() {
 
       <div>
         <p>
-          <strong> BES EXPO 2024</strong> is open for participation by
+          <strong> BES EXPO 2025</strong> is open for participation by
           manufacturers, dealers and distributors of products related to radio
           and TV broadcasting from India and abroad
         </p>
