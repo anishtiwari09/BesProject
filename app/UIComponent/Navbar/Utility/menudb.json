@@ -177,10 +177,36 @@
   {
     "id": 3,
     "name": "Publications",
-    "path": "",
+    "path": "/publication",
     "haveChildren": "yes",
     "isExpandable": true,
-    "subChildren": []
+    "subChildren": [
+      {
+        "id": 1,
+        "name": "Gallaries",
+        "path": "/galleries",
+        "haveChildren": "yes",
+        "isExpandable": true,
+        "subChildren": [
+          {
+            "id": 1,
+            "name": "Pictures",
+            "path": "/pictures",
+            "haveChildren": "yes",
+            "isExpandable": true,
+            "subChildren": []
+          },
+          {
+            "id": 2,
+            "name": "Videos",
+            "path": "/videos",
+            "haveChildren": "yes",
+            "isExpandable": true,
+            "subChildren": []
+          }
+        ]
+      }
+    ]
   },
   {
     "id": 4,
