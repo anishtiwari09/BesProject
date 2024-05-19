@@ -5,6 +5,7 @@
   margin-left: 0;
   margin-right: 0;
   line-height: 26px;
+  text-align: justify;
 }
 .content_container a:hover {
   border-bottom: 1px solid black;

@@ -1,48 +1,24 @@
 import React from "react";
-import styles from "@/app/about_bes/content.module.css";
-export default function page() {
+
+import FeeDetails from "./FeeDetails";
+import BookYourSpace from "./BookYourSpace";
+export default async function page() {
+  let countryData = [];
+  try {
+    let data = await fetch("https://restcountries.com/v3.1/all");
+    data = await data.json();
+
+    data.forEach((element) => {
+      if (element?.name?.common) countryData.push(element?.name?.common);
+    });
+    countryData.sort();
+  } catch (e) {
+    console.log("error");
+  }
   return (
-    <div
-      className={"flex flex-col max-w-[800px] p-4 " + styles.content_container}
-    >
-      <h2 className="text-[26px] font-bold">Participation Fee </h2>
-      <br />
-      <h4 className="font-bold">
-        Participation fee for Indian and foreign exhibitors is as follows
-      </h4>
-      <br />
-      <h5 className="font-bold " style={{ fontStyle: "italic" }}>
-        Indian companies
-      </h5>
-      <div>
-        <div>
-          <i> Scheme: </i>{" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.
-          13,000 per sqm <br />
-          <i>Raw Space:</i>{" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.
-          12,000 per sqm <br />
-          <i>Open to sky space:</i> &nbsp;Rs. 6,000 per sqm
-        </div>
-      </div>
-      <br />
-      <h5 className="font-bold " style={{ fontStyle: "italic" }}>
-        Foreign companies
-      </h5>
-      <div>
-        <div>
-          <i> Scheme: </i>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US$
-          375 per sqm <br />
-          <i>Raw Space:</i>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          US$ 300 per sqm <br />
-          <i>Open to sky space:</i> &nbsp;US$ 165 per sqm
-          <p>
-            <strong>GST @ 18% is applicable in all categories of space</strong>
-          </p>
-        </div>
-      </div>
+    <div>
+      <FeeDetails />
+      <BookYourSpace countryData={countryData} />
     </div>
   );
 }

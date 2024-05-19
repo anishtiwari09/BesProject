@@ -22,12 +22,6 @@ export default function Home() {
         <div className="absolute -translate-y-1/2 z-[3] top-1/2 w-full mobile_notification_css">
           <Notification />
         </div>
-        <div
-          className="absolute z-[2] top-0 bottom-0 left-0 right-0 opacity-50 bg-[rgba(28, 32, 110, 1)]"
-          style={{
-            background: "rgba(28, 32, 110, 0.5);",
-          }}
-        ></div>
         <HomePageCarousel
           data={data}
           url={HOMEPAGE.sliderImageDir + HOMEPAGE.currentYear}

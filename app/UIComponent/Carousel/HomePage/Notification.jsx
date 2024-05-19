@@ -15,22 +15,22 @@ export default function Notification() {
         indicators={false}
       >
         <React.Fragment>
-          <h4 className="font-bold text-3xl text-white text-center m-auto w-[90%] ubuntu_font .conference_text conference_text sm:text-xl">
+          <h4 className="font-bold text-3xl text-white text-center m-auto w-[90%] ubuntu_font .conference_text conference_text emoisis_text">
             {HOMEPAGE.eventCount} International Conference & Exhibition on
             Broadcast & Media Technology
           </h4>
-          <h3 className="font-bold text-4xl text-[#faac1d] text-center m-auto mt-6 conference_text conference_text2">
-            {HOMEPAGE.expoStartDate.date}th to {HOMEPAGE.expoEndDate.date}th{" "}
+          <h3 className="font-bold text-4xl text-[#faac1d] text-center m-auto mt-6 conference_text conference_text2 text-shadow">
+            {HOMEPAGE.expoStartDate.date}nd to {HOMEPAGE.expoEndDate.date}th{" "}
             {HOMEPAGE.expoEndDate.fullMonth} {HOMEPAGE.expoEndDate.year}
           </h3>
         </React.Fragment>
         <React.Fragment>
-          <h4 className="font-bold text-3xl text-white text-center m-auto w-[90%] ubuntu_font .conference_text conference_text  sm:text-xl">
+          <h4 className="font-bold text-3xl text-white text-center m-auto w-[90%] ubuntu_font  conference_text emoisis_text">
             {HOMEPAGE.eventCount} International Conference & Exhibition on
             Broadcast & Media Technology
           </h4>
-          <h3 className="font-bold text-4xl text-white text-center m-auto mt-6 conference_text conference_text2">
-            {HOMEPAGE.expoStartDate.date}th to {HOMEPAGE.expoEndDate.date}th{" "}
+          <h3 className="font-bold text-4xl text-white text-center m-auto mt-6 conference_text conference_text2 text-shadow">
+            {HOMEPAGE.expoStartDate.date}nd to {HOMEPAGE.expoEndDate.date}th{" "}
             {HOMEPAGE.expoEndDate.fullMonth} {HOMEPAGE.expoEndDate.year}
           </h3>
         </React.Fragment>
@@ -59,10 +59,18 @@ export default function Notification() {
           BES Expo 2024 Presentation
         </a>
       </div>
-      <h2 className="mt-4 font-bold text-4xl text-center m-auto text-white conference_text ">
-        {" "}
-        Book Your Space
-      </h2>
+      <a
+        className="flex"
+        href="/event_conference/bes_expo/exibition/participation_fee"
+      >
+        <Button
+          variant="contained"
+          className="flex w-fit m-auto mt-4 bg-[#222fda] text-[16px] font-[500] hover:bg-[#ffffff] hover:text-[#000]"
+        >
+          Book Your Space
+        </Button>
+      </a>
+
       <div className="flex gap-2 justify-center mt-4 registration_btn_container">
         <Link href={"/registrationform/visitor"}>
           <Button
