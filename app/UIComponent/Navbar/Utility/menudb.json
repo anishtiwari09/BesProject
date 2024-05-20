@@ -177,36 +177,10 @@
   {
     "id": 3,
     "name": "Publications",
-    "path": "/publication",
-    "haveChildren": "yes",
-    "isExpandable": true,
-    "subChildren": [
-      {
-        "id": 1,
-        "name": "Gallaries",
-        "path": "/galleries",
-        "haveChildren": "yes",
-        "isExpandable": true,
-        "subChildren": [
-          {
-            "id": 1,
-            "name": "Pictures",
-            "path": "/pictures",
-            "haveChildren": "yes",
-            "isExpandable": true,
-            "subChildren": []
-          },
-          {
-            "id": 2,
-            "name": "Videos",
-            "path": "/videos",
-            "haveChildren": "yes",
-            "isExpandable": true,
-            "subChildren": []
-          }
-        ]
-      }
-    ]
+    "path": "",
+    "haveChildren": "false",
+    "isExpandable": false,
+    "subChildren": []
   },
   {
     "id": 4,
@@ -248,6 +222,31 @@
         "path": "/membership",
         "parentPath": "/about_bes",
         "isSeprateParentPath": true,
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Gallaries",
+    "path": "/galleries",
+    "haveChildren": "yes",
+    "isExpandable": true,
+    "subChildren": [
+      {
+        "id": 1,
+        "name": "Pictures",
+        "path": "/pictures",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+      {
+        "id": 2,
+        "name": "Videos",
+        "path": "/videos",
         "haveChildren": "no",
         "isExpandable": false,
         "subChildren": []
