@@ -26,7 +26,7 @@ export default function Notification() {
         </React.Fragment>
         <React.Fragment>
           <h4 className="font-bold text-3xl text-white text-center m-auto w-[90%] ubuntu_font  conference_text emoisis_text">
-            {HOMEPAGE.eventCount} International Conference & Exhibiti  on
+            {HOMEPAGE.eventCount} International Conference & Exhibition  on
             Broadcast & Media Technology
           </h4>
           <h3 className="font-bold text-4xl text-white text-center m-auto mt-6 conference_text conference_text2 text-shadow">
