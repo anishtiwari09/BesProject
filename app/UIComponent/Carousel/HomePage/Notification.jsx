@@ -20,7 +20,7 @@ export default function Notification() {
             Broadcast & Media Technology
           </h4>
           <h3 className="font-bold text-4xl text-[#faac1d] text-center m-auto mt-6 conference_text conference_text2 text-shadow">
-            {HOMEPAGE.expoStartDate.date}nd to {HOMEPAGE.expoEndDate.date}th{" "}
+            {HOMEPAGE.expoStartDate.date}th to {HOMEPAGE.expoEndDate.date}nd
             {HOMEPAGE.expoEndDate.fullMonth} {HOMEPAGE.expoEndDate.year}
           </h3>
         </React.Fragment>
@@ -30,7 +30,7 @@ export default function Notification() {
             Broadcast & Media Technology
           </h4>
           <h3 className="font-bold text-4xl text-white text-center m-auto mt-6 conference_text conference_text2 text-shadow">
-            {HOMEPAGE.expoStartDate.date}nd to {HOMEPAGE.expoEndDate.date}th{" "}
+            {HOMEPAGE.expoStartDate.date}th to {HOMEPAGE.expoEndDate.date}nd{" "}
             {HOMEPAGE.expoEndDate.fullMonth} {HOMEPAGE.expoEndDate.year}
           </h3>
         </React.Fragment>
