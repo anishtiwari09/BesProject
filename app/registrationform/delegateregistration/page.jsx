@@ -1,4 +1,3 @@
-import React from "react";
 import visitorDb from "./Utility/db.json";
 import Form from "../Form/Form";
 import styles from "../Form/form.module.css";
@@ -25,7 +24,11 @@ export default function page() {
               Online Request Form for Conference
             </h3>
           </div>
-          <Form db={visitorDb} />
+          <Form
+            db={visitorDb}
+            apiLink={"/backend/api/registration/delegate_registration"}
+            request={"POST"}
+          />
         </Box>
       </div>
     </div>

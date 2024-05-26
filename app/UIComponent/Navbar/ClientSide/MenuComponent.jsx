@@ -1,4 +1,5 @@
 import { Button, Menu, MenuItem } from "@mui/material";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useRef } from "react";
 
@@ -82,9 +83,9 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
                             onClick={handleClose}
                             style={{ padding: "6px 30px" }}
                           >
-                            <a href={newPath + sub_item.path}>
+                            <Link href={newPath + sub_item.path}>
                               {sub_item.name}
-                            </a>
+                            </Link>
                           </MenuItem>
                         </li>
                       );
@@ -93,7 +94,7 @@ export default function MenuCompoenent({ data, index, open, setOpen }) {
                 </div>
               ) : (
                 <MenuItem onClick={handleClose} key={key}>
-                  <a href={parentPath + item.path}>{item.name}</a>
+                  <Link href={parentPath + item.path}>{item.name}</Link>
                 </MenuItem>
               );
             })}

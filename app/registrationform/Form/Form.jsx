@@ -12,10 +12,14 @@ import React, { useRef, useState } from "react";
 import styles from "./form.module.css";
 import { numberValidator, emailValidator } from "@/app/Utility/validator";
 import PleaseWaitLoader from "@/app/UIComponent/Loader/PleaseWaitLoader";
-export default function Form({ db, onClick }) {
+import axios from "axios";
+import SuccessModal from "@/app/UIComponent/Modals/SuccessModal";
+export default function Form({ db, onClick, apiLink }) {
   const [visitorDb, setVisitorDb] = useState(db);
+  const [showSuccessModal, setSuccessModal] = useState(false);
   const [submit, setSubmit] = useState(false);
-  const handleChange = (e, index) => {
+  const [errorMsg, setErrorMsg] = useState("");
+  const handleChange = async (e, index) => {
     let value = e.target.value;
 
     if (visitorDb[index].fieldType === "number" && value) {
@@ -28,7 +32,8 @@ export default function Form({ db, onClick }) {
       visitorDb[index].showError = false;
     setVisitorDb([...visitorDb]);
   };
-  const handleValidate = () => {
+  const handleValidate = async () => {
+    setErrorMsg("");
     let isValidate = true;
     for (let item of visitorDb) {
       let value = item?.value || "";
@@ -50,6 +55,24 @@ export default function Form({ db, onClick }) {
     }
     if (isValidate) {
       setSubmit(isValidate);
+      try {
+        let finalObj = {};
+        for (let item of visitorDb) finalObj[item?.key] = item?.value;
+        let res = await axios({
+          method: "POST",
+          url: apiLink,
+          data: finalObj,
+        });
+        setErrorMsg(res?.message || "Something went wrong");
+        if (!res.status) {
+          setSubmit(false);
+        } else {
+          setSuccessModal(true);
+        }
+      } catch (e) {
+        setErrorMsg(e?.message || "Something went wrong");
+        setSubmit(false);
+      }
       typeof onClick === "function" && onClick(visitorDb);
     } else {
       setVisitorDb([...visitorDb]);
@@ -121,8 +144,17 @@ export default function Form({ db, onClick }) {
           >
             Submit
           </Button>
+          {errorMsg && (
+            <p
+              style={{ color: submit ? "green" : "red" }}
+              className="text-center"
+            >
+              {errorMsg}
+            </p>
+          )}
         </div>
       )}
+      {showSuccessModal && <SuccessModal isOpen={true} />}
     </React.Fragment>
   );
 }
