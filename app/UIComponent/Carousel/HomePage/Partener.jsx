@@ -31,7 +31,7 @@ export default function Partener() {
           </a>
         </div>
         <div>
-          <a href="http://www.aesindia.org" target="_blank">
+          <a href="" target="_blank">
             <img src="/Images/homepage/aimbda.jpg" border="0" />
           </a>
         </div>
