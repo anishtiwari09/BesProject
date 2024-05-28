@@ -47,9 +47,14 @@ const delegateUserSchema = new mongoose.Schema({
     type: String,
     required: false,
   },
+  tracking_id: {
+    type: Number,
+    required: true,
+    unique: true,
+    default: Date.now(),
+  },
 });
-
 const DelegateUser =
-  mongoose.model.delegateUser ||
+  mongoose.models.delegateUser ||
   mongoose.model("delegateUser", delegateUserSchema);
 export default DelegateUser;

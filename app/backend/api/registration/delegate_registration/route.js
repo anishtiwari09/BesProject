@@ -20,7 +20,7 @@ export async function POST(req) {
       other_details,
     } = json;
     let user = await DelegateUser.findOne({
-      $or: [{ email: email, mobile: mobile }],
+      $or: [{ email: email }, { mobile: mobile }],
     });
     if (user) {
       return NextResponse.json(
@@ -30,7 +30,6 @@ export async function POST(req) {
         },
         { status: 409 }
       );
-      console.log(user);
     } else {
       console.log({ name });
       let newUser = new DelegateUser({

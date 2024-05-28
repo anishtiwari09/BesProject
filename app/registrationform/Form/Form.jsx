@@ -14,6 +14,7 @@ import { numberValidator, emailValidator } from "@/app/Utility/validator";
 import PleaseWaitLoader from "@/app/UIComponent/Loader/PleaseWaitLoader";
 import axios from "axios";
 import SuccessModal from "@/app/UIComponent/Modals/SuccessModal";
+
 export default function Form({ db, onClick, apiLink }) {
   const [visitorDb, setVisitorDb] = useState(db);
   const [showSuccessModal, setSuccessModal] = useState(false);
@@ -70,7 +71,8 @@ export default function Form({ db, onClick, apiLink }) {
           setSuccessModal(true);
         }
       } catch (e) {
-        setErrorMsg(e?.message || "Something went wrong");
+        console.log(e);
+        setErrorMsg(e?.response?.data?.message || "Something went wrong");
         setSubmit(false);
       }
       typeof onClick === "function" && onClick(visitorDb);

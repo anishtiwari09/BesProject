@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Alert from "@mui/material/Alert";
 import Typography from "@mui/material/Typography";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 const style = {
   position: "absolute",
   top: "50%",
@@ -32,7 +32,7 @@ export default function SuccessModal({ isOpen }) {
     }, 1000);
     return () => clearInterval(id);
   }, []);
-  if (count < 1) router.push("/");
+  if (count < 1) redirect("/");
   return (
     <div>
       <Modal
@@ -43,7 +43,7 @@ export default function SuccessModal({ isOpen }) {
         <Box sx={{ ...style, width: 400 }}>
           <Alert severity="success">You have successFully Registered.</Alert>
           <Typography>Redireting to homepage... </Typography>
-          <Typography>{count} </Typography>
+          <Typography className="text-center">{count} </Typography>
         </Box>
       </Modal>
     </div>
