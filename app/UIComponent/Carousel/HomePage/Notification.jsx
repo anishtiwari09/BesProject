@@ -71,6 +71,7 @@ export default function Notification() {
         </Button>
       </a>
 
+
       <div className="flex gap-2 justify-center mt-4 registration_btn_container">
         <Link href={"/registrationform/visitor"}>
           <Button
@@ -94,6 +95,18 @@ export default function Notification() {
             Delegate Registration
           </Button>
         </Link>
+        <a
+        className="flex"
+        href="/event_conference/bes_expo/exibition/participation_fee"
+      >
+        <Button
+          variant="contained"
+          className="flex w-fit m-auto mt-4 bg-[#222fda] text-[16px] font-[500] hover:bg-[#ffffff] hover:text-[#000]"
+        >
+         Invitation for World Telecom Day to be held on 30-05-2024
+        </Button>
+      </a>
+
       </div>
     </div>
   );
