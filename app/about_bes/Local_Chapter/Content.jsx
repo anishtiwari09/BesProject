@@ -18,7 +18,7 @@ export default function Content({ db }) {
         "flex flex-col max-w-[800px] m-auto p-4 " + styles.content_container
       }
     >
-      <h2 className="text-[26px] font-bold">Commitees</h2>
+      <h2 className="text-[26px] font-bold">Local Chapter</h2>
 
       <div>
         <Table>
