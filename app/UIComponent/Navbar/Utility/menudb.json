@@ -49,7 +49,7 @@
       {
         "id": 6,
         "name": "Local Chapter",
-        "path": "/local_chater",
+        "path": "/Local_Chapter",
         "haveChildren": "no",
         "isExpandable": false,
         "subChildren": []
