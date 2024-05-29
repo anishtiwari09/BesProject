@@ -59,6 +59,19 @@ export default function Notification() {
           BES Expo 2024 Presentation
         </a>
       </div>
+
+      <a
+        className="flex"
+        href=""/pdf/others/invitationwtd.pdf"
+      >
+        <Button
+          variant="contained"
+          className="flex w-fit m-auto mt-4 bg-[#222fda] text-[16px] font-[500] hover:bg-[#ffffff] hover:text-[#000]"
+        >
+          INVITATION FOR WORLD TELECOM DAY-2024
+        </Button>
+      </a>
+      
      {/*  <a
         className="flex"
         href="/event_conference/bes_expo/exibition/participation_fee"
