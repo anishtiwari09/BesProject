@@ -3,72 +3,109 @@
     "Chapter": "Ahmedabad ",
     "id": 1,
     "email": "sat_dash@yahoo.co.in",
-    "chairman": "Shri Satyajeet Dash"
+    "chairman": "Shri Satyajeet Dash",
+    "secretary":"",
+    "treasurer":"",
+    "mobile":""
+
   },
   {
     "Chapter": "Bangalore ",
     "id": 2,
-    "email": "sat_dash@yahoo.co.in",
-    "chairman": "Shri Satyajeet Dash"
+    "email": "",
+    "chairman": "",
+    "secretary":"",
+    "treasurer":"",
+    "mobile":""
   },
   {
     "Chapter": "Bhubaneshwar",
     "id": 3,
-    "email": "sat_dash@yahoo.co.in",
-    "chairman": "Shri Satyajeet Dash"
+    "email": "",
+    "chairman": "",
+    "secretary":"",
+    "treasurer":"",
+    "mobile":""
   },
   {
     "Chapter": "Chennai",
     "id": 4,
-    "email": "sat_dash@yahoo.co.in",
-    "chairman": "Shri Satyajeet Dash"
+    "email": "",
+    "chairman": "",
+    "secretary":"",
+    "treasurer":"",
+    "mobile":""
   },
   {
     "Chapter": "Jaipur",
     "id": 5,
-    "email": "sat_dash@yahoo.co.in",
-    "chairman": "Shri Satyajeet Dash"
+    "email": "",
+    "chairman": "",
+    "secretary":"",
+    "treasurer":"",
+    "mobile":""
   },
   {
     "Chapter": "Kolkatta ",
     "id": 6,
-    "email": "sat_dash@yahoo.co.in",
-    "chairman": "Shri Satyajeet Dash"
+    "email": "",
+    "chairman": "",
+    "secretary":"",
+    "treasurer":"",
+    "mobile":""
   },
   {
     "Chapter": "Hyderabad",
     "id": 7,
-    "email": "sat_dash@yahoo.co.in",
-    "chairman": "Shri Satyajeet Dash"
+    "email": "",
+    "chairman": "",
+    "secretary":"",
+    "treasurer":"",
+    "mobile":""
   },
   {
     "Chapter": "Mumbai",
     "id": 8,
-    "email": "sat_dash@yahoo.co.in",
-    "chairman": "Shri Satyajeet Dash"
+    "email": "",
+    "chairman": "",
+    "secretary":"",
+    "treasurer":"",
+    "mobile":""
   },
   {
     "Chapter": "Thanjavur",
     "id": 9,
-    "email": "sat_dash@yahoo.co.in",
-    "chairman": "Shri Satyajeet Dash"
+    "email": "",
+    "chairman": "",
+    "secretary":"",
+    "treasurer":"",
+    "mobile":""
   },
   {
     "Chapter": "Thiruvananthapuram",
     "id": 10,
-    "email": "sat_dash@yahoo.co.in",
-    "chairman": "Shri Satyajeet Dash"
+    "email": "",
+    "chairman": "",
+    "secretary":"",
+    "treasurer":"",
+    "mobile":""
   },
   {
     "Chapter": "Pune",
     "id": 11,
-    "email": "sat_dash@yahoo.co.in",
-    "chairman": "Shri Satyajeet Dash"
+    "email": "",
+    "chairman": "",
+    "secretary":"",
+    "treasurer":"",
+    "mobile":""
   },
   {
     "Chapter": "Guwahati",
     "id": 12,
-    "email": "sat_dash@yahoo.co.in",
-    "chairman": "Shri Satyajeet Dash"
+    "email": "",
+    "chairman": "",
+    "secretary":"",
+    "treasurer":"",
+    "mobile":""
   }
 ]
