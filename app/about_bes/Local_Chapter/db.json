@@ -1,0 +1,50 @@
+[
+  {
+    "nameOfCommitees": "BES Expo-Conference ",
+    "id": 1,
+    "email": "surendersingh1967@rediffmail.com",
+    "chairman": "Shri Surender Singh"
+  },
+  {
+    "nameOfCommitees": "BES Expo-Exhibition",
+    "id": 2,
+    "email": "dpsingh.doordarshan@gmail.com ",
+    "chairman": "Shri D.P. Singh"
+  },
+  {
+    "nameOfCommitees": "BES Review",
+    "id": 3,
+    "email": "rajeev00kumar@yahoo.com ",
+    "chairman": "Shri Rajeev Kumar"
+  },
+  {
+    "nameOfCommitees": "Website Management ",
+    "id": 4,
+    "email": "aftabahmad1@rediffmail.com",
+    "chairman": "Shri Aftab Ahmad"
+  },
+  {
+    "nameOfCommitees": "BES Award",
+    "id": 5,
+    "email": "vedprakash67@gmail.com ",
+    "chairman": "Shri Ved Prakash"
+  },
+  {
+    "nameOfCommitees": "New Member Induction",
+    "id": 6,
+    "email": "adityachaturvedi75@hotmail.com",
+    "chairman": "Shri Aditya Chaturvedi"
+  },
+  {
+    "nameOfCommitees": "Seminar and Lecture",
+    "id": 7,
+    "email": "jhashok@gmail.com  ",
+    "chairman": "Shri A.K. Jha"
+  },
+  {
+    "nameOfCommitees": "Local Chapter Coordination Committee ",
+    "id": 8,
+    "email": "pvt_1967@yahoo.com",
+    "chairman": "Shri Prakash Veer"
+  }
+]
