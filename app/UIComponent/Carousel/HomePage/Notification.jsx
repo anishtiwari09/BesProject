@@ -95,8 +95,8 @@ export default function Notification() {
           >
             Delegate Registration
           </Button>
-          </Link> */}
-      </div>
+          </Link> 
+      </div> */}
     </div>
   );
 }
