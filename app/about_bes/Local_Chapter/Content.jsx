@@ -40,6 +40,9 @@ export default function Content({ db }) {
                   <StyledTableCell>{key + 1}</StyledTableCell>
                   <StyledTableCell>{item.chapter}</StyledTableCell>
                   <StyledTableCell>{item?.chairman}</StyledTableCell>
+                  <StyledTableCell>{item?.secretary}</StyledTableCell>
+                  <StyledTableCell>{item?.treasurer}</StyledTableCell>
+                  <StyledTableCell>{item?.mobile}</StyledTableCell>
                   <StyledTableCell>
                     {item?.email ? (
                       <Link href={"mailto:" + item.email}>{item.email}</Link>
