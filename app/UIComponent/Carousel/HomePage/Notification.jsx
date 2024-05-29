@@ -62,7 +62,7 @@ export default function Notification() {
 
       <a
         className="flex"
-        href=""/pdf/others/invitationwtd.pdf"
+        href="/pdf/others/invitationwtd.pdf"
       >
         <Button
           variant="contained"
