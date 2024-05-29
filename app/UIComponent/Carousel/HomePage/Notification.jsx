@@ -66,7 +66,7 @@ export default function Notification() {
       >
         <Button
           variant="contained"
-          className="flex w-fit m-auto mt-4 bg-[#222fda] text-[16px] font-[500] hover:bg-[#ffffff] hover:text-[#000]"
+          className="flex w-fit m-auto mt-4 bg-[#008CBA] text-[16px] font-[500] hover:bg-[#ffffff] hover:text-[#000]"
         >
           INVITATION FOR WORLD TELECOM DAY-2024
         </Button>
