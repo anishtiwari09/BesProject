@@ -70,7 +70,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => {
       textAlign: "center",
     },
     [`&.${tableCellClasses.body}`]: {
-      fontSize: 12,
+      fontSize: 14,
       textAlign: "center",
     },
   };
