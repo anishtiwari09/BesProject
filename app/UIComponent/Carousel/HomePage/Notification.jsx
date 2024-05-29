@@ -59,22 +59,6 @@ export default function Notification() {
           BES Expo 2024 Presentation
         </a>
       </div>
-
-      <a
-        className="flex"
-        href="/event_conference/bes_expo/exibition/participation_fee"
-      >
-        <Button
-          variant="contained"
-          className="flex w-fit m-auto mt-4 bg-[#222fda] text-[16px] font-[500] hover:bg-[#ffffff] hover:text-[#000]"
-        >
-         Invitation for World Telecom Day to be heldon 30-05-2024
-        </Button>
-      </a>
-
-
-{/*
-
       <a
         className="flex"
         href="/event_conference/bes_expo/exibition/participation_fee"
@@ -86,7 +70,6 @@ export default function Notification() {
           Book Your Space
         </Button>
       </a>
-
 
       <div className="flex gap-2 justify-center mt-4 registration_btn_container">
         <Link href={"/registrationform/visitor"}>
@@ -111,8 +94,7 @@ export default function Notification() {
             Delegate Registration
           </Button>
         </Link>
-  */}
-        </div>
+      </div>
     </div>
   );
 }
