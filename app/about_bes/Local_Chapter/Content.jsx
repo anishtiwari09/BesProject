@@ -25,8 +25,11 @@ export default function Content({ db }) {
           <TableHead>
             <TableRow>
               <StyledTableCell>S.No</StyledTableCell>
-              <StyledTableCell>Name of Commitees</StyledTableCell>
-              <StyledTableCell>Chairman</StyledTableCell>
+              <StyledTableCell>Chapter</StyledTableCell>
+              <StyledTableCell>Chairperson</StyledTableCell>
+              <StyledTableCell>Hon. Secretary</StyledTableCell>
+              <StyledTableCell>Hon. Treasurer</StyledTableCell>
+              <StyledTableCell>Mobile No.</StyledTableCell>
               <StyledTableCell>Email</StyledTableCell>
             </TableRow>
           </TableHead>
