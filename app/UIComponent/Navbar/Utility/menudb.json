@@ -56,7 +56,7 @@
       },
 
       {
-        "id": 6,
+        "id": 7,
         "name": "Membership",
         "path": "/membership",
         "haveChildren": "no",
@@ -64,7 +64,7 @@
         "subChildren": []
       },
       {
-        "id": 6,
+        "id": 8,
         "name": "Previous Council",
         "path": "/previous_council",
         "haveChildren": "no",
@@ -72,7 +72,7 @@
         "subChildren": []
       },
       {
-        "id": 7,
+        "id": 9,
         "name": "Contact us",
         "path": "/contact_us",
         "haveChildren": "no",
@@ -80,7 +80,7 @@
         "subChildren": []
       },
             {
-        "id": 9,
+        "id": 10,
         "name": "Feedback",
         "path": "/feedback",
         "haveChildren": "no",
