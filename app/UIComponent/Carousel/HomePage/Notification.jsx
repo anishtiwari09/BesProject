@@ -99,15 +99,7 @@ export default function Notification() {
         className="flex"
         href="/event_conference/bes_expo/exibition/participation_fee"
       >
-        <Button
-          variant="contained"
-          className="flex w-fit m-auto mt-4 bg-[#222fda] text-[16px] font-[500] hover:bg-[#ffffff] hover:text-[#000]"
-        >
-         Invitation for World Telecom Day to be held on 30-05-2024
-        </Button>
-      </a>
-
-      </div>
+        </div>
     </div>
   );
 }
