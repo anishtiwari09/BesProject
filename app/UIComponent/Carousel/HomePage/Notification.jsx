@@ -59,7 +59,7 @@ export default function Notification() {
           BES Expo 2024 Presentation
         </a>
       </div>
-      <a
+     {/*  <a
         className="flex"
         href="/event_conference/bes_expo/exibition/participation_fee"
       >
@@ -70,7 +70,7 @@ export default function Notification() {
           Book Your Space
         </Button>
       </a>
-
+*/}
       <div className="flex gap-2 justify-center mt-4 registration_btn_container">
         <Link href={"/registrationform/visitor"}>
           <Button
