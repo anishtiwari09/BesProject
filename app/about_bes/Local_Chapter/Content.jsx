@@ -38,7 +38,7 @@ export default function Content({ db }) {
               return (
                 <StyledTableRow key={item.id}>
                   <StyledTableCell>{key + 1}</StyledTableCell>
-                  <StyledTableCell>{item.nameOfCommitees}</StyledTableCell>
+                  <StyledTableCell>{item.chapter}</StyledTableCell>
                   <StyledTableCell>{item?.chairman}</StyledTableCell>
                   <StyledTableCell>
                     {item?.email ? (
