@@ -18,8 +18,8 @@ export default function Content({ db }) {
         "flex flex-col max-w-[800px] m-auto p-4 " + styles.content_container
       }
     >
-     <center> <h2 className="text-[24px] font-bold">Local Chapter</h2> 
-      <h4 className="text-[14px] font-bold">The Society has 12 Local Chapters</h4> </center>
+     <centre> <h2 className="text-[24px] font-bold">Local Chapter</h2> 
+      <h4 className="text-[14px] font-bold">The Society has 12 Local Chapters</h4> </centre>
       
 
       <div>
@@ -70,7 +70,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => {
       textAlign: "center",
     },
     [`&.${tableCellClasses.body}`]: {
-      fontSize: 11,
+      fontSize: 12,
       textAlign: "center",
     },
   };
