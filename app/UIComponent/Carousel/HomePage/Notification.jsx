@@ -71,6 +71,7 @@ export default function Notification() {
         </Button>
       </a>
 */}
+  {/*
       <div className="flex gap-2 justify-center mt-4 registration_btn_container">
         <Link href={"/registrationform/visitor"}>
           <Button
@@ -82,7 +83,8 @@ export default function Notification() {
           >
             Visitor Registration
           </Button>
-        </Link>
+          </Link>  */}
+       {/*}
         <Link href={"/registrationform/delegateregistration"}>
           <Button
             variant="contained"
@@ -93,7 +95,7 @@ export default function Notification() {
           >
             Delegate Registration
           </Button>
-        </Link>
+          </Link> */}
       </div>
     </div>
   );
