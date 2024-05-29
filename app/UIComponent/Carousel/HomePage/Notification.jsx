@@ -73,7 +73,7 @@ export default function Notification() {
       </a>
 
 
-
+{/*
 
       <a
         className="flex"
@@ -111,8 +111,8 @@ export default function Notification() {
             Delegate Registration
           </Button>
         </Link>
-  
-      </div>
+  */}
+        </div>
     </div>
   );
 }
