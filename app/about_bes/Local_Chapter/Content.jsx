@@ -18,7 +18,9 @@ export default function Content({ db }) {
         "flex flex-col max-w-[800px] m-auto p-4 " + styles.content_container
       }
     >
-      <h2 className="text-[26px] font-bold">Local Chapter</h2>
+      <h2 className="text-[24px] font-bold">Local Chapter</h2> 
+      <h4 className="text-[14px] font-bold">The Society has 12 Local Chapters</h4>
+      
 
       <div>
         <Table>
