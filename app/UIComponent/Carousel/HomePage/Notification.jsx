@@ -95,11 +95,8 @@ export default function Notification() {
             Delegate Registration
           </Button>
         </Link>
-        <a
-        className="flex"
-        href="/event_conference/bes_expo/exibition/participation_fee"
-      >
-        </div>
+  
+      </div>
     </div>
   );
 }
