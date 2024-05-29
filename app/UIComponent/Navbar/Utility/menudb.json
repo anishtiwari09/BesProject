@@ -48,6 +48,15 @@
       },
       {
         "id": 6,
+        "name": "Local Chapter",
+        "path": "/local_chater",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "subChildren": []
+      },
+
+      {
+        "id": 6,
         "name": "Membership",
         "path": "/membership",
         "haveChildren": "no",
@@ -70,15 +79,7 @@
         "isExpandable": false,
         "subChildren": []
       },
-      {
-        "id": 8,
-        "name": "FAQ",
-        "path": "/faq",
-        "haveChildren": "no",
-        "isExpandable": false,
-        "subChildren": []
-      },
-      {
+            {
         "id": 9,
         "name": "Feedback",
         "path": "/feedback",
