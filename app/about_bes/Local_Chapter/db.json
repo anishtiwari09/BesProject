@@ -10,7 +10,7 @@
 
   },
   {
-    "Chapter": "Bangalore ",
+    "chapter": "Bangalore ",
     "id": 2,
     "email": "",
     "chairman": "",
@@ -19,7 +19,7 @@
     "mobile":""
   },
   {
-    "Chapter": "Bhubaneshwar",
+    "chapter": "Bhubaneshwar",
     "id": 3,
     "email": "",
     "chairman": "",
@@ -28,7 +28,7 @@
     "mobile":""
   },
   {
-    "Chapter": "Chennai",
+    "chapter": "Chennai",
     "id": 4,
     "email": "",
     "chairman": "",
@@ -37,7 +37,7 @@
     "mobile":""
   },
   {
-    "Chapter": "Jaipur",
+    "chapter": "Jaipur",
     "id": 5,
     "email": "",
     "chairman": "",
@@ -46,7 +46,7 @@
     "mobile":""
   },
   {
-    "Chapter": "Kolkatta ",
+    "chapter": "Kolkatta ",
     "id": 6,
     "email": "",
     "chairman": "",
@@ -55,7 +55,7 @@
     "mobile":""
   },
   {
-    "Chapter": "Hyderabad",
+    "chapter": "Hyderabad",
     "id": 7,
     "email": "",
     "chairman": "",
@@ -64,7 +64,7 @@
     "mobile":""
   },
   {
-    "Chapter": "Mumbai",
+    "chapter": "Mumbai",
     "id": 8,
     "email": "",
     "chairman": "",
@@ -73,7 +73,7 @@
     "mobile":""
   },
   {
-    "Chapter": "Thanjavur",
+    "chapter": "Thanjavur",
     "id": 9,
     "email": "",
     "chairman": "",
@@ -82,7 +82,7 @@
     "mobile":""
   },
   {
-    "Chapter": "Thiruvananthapuram",
+    "chapter": "Thiruvananthapuram",
     "id": 10,
     "email": "",
     "chairman": "",
@@ -91,7 +91,7 @@
     "mobile":""
   },
   {
-    "Chapter": "Pune",
+    "chapter": "Pune",
     "id": 11,
     "email": "",
     "chairman": "",
@@ -100,7 +100,7 @@
     "mobile":""
   },
   {
-    "Chapter": "Guwahati",
+    "chapter": "Guwahati",
     "id": 12,
     "email": "",
     "chairman": "",
