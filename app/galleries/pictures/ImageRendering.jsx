@@ -20,7 +20,7 @@ export default function ImageRendering({ path, allImage }) {
     setOpen(false);
     setSelectedImage("");
   };
-  console.log(selectedImage);
+  console.log({ selectedImage });
   return (
     <div className="flex flex-col">
       <ImageList
