@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
-const delegateUserSchema = new mongoose.Schema(
+const Schema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -24,29 +24,9 @@ const delegateUserSchema = new mongoose.Schema(
       required: true,
       unique: [true, "This email is aready exist"],
     },
-    query: {
-      type: String,
-      required: false,
-    },
-    category: {
+    area_of_work: {
       type: String,
       required: true,
-    },
-    payment_type: {
-      type: String,
-      required: true,
-    },
-    transaction_no: {
-      type: Number,
-      required: true,
-    },
-    amount: {
-      type: Number,
-      required: true,
-    },
-    other_details: {
-      type: String,
-      required: false,
     },
     tracking_id: {
       type: Number,
@@ -57,7 +37,9 @@ const delegateUserSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-const DelegateUser =
-  mongoose.models.delegateUser ||
-  mongoose.model("delegateUser", delegateUserSchema);
-export default DelegateUser;
+
+const VisitorRegistration =
+  mongoose.models.visitorRegistrationUser ||
+  mongoose.model("visitorRegistrationUser", Schema);
+
+export default VisitorRegistration;

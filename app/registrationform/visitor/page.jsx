@@ -21,7 +21,11 @@ export default function page() {
             Visitor Registration
           </h2>
 
-          <Form db={visitorDb} />
+          <Form
+            db={visitorDb}
+            apiLink={"/backend/api/registration/visitor_registration"}
+            request={"POST"}
+          />
         </Box>
       </div>
     </div>

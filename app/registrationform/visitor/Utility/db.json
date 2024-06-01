@@ -63,57 +63,57 @@
       },
       {
         "key": "owner/corporate_management",
-        "value": "owner/corporate_management",
+        "value": "Owner/Corporate Management",
         "label": "Owner/Corporate Management"
       },
       {
         "key": "engineering",
-        "value": "engineering",
+        "value": "Engineering",
         "label": "Engineering"
       },
       {
         "key": "general_management",
-        "value": "general_management",
+        "value": "General Management",
         "label": "General Management"
       },
       {
         "key": "sales/marketing",
-        "value": "sales/marketing",
+        "value": "Sales/Marketing",
         "label": "Sales/Marketing"
       },
       {
         "key": "it",
-        "value": "it",
+        "value": "IT",
         "label": "IT"
       },
       {
         "key": "education",
-        "value": "education",
+        "value": "Education",
         "label": "Education"
       },
       {
         "key": "production",
-        "value": "production",
+        "value": "Production",
         "label": "Production"
       },
       {
         "key": "r&d",
-        "value": "r&d",
+        "value": "R&D",
         "label": "R&D"
       },
       {
         "key": "cinematography",
-        "value": "cinematography",
+        "value": "Cinematography",
         "label": "Cinematography"
       },
       {
         "key": "lighting",
-        "value": "lighting",
+        "value": "Lighting",
         "label": "Lighting"
       },
       {
         "key": "any_other_(please_specify)",
-        "value": "any_other_(please_specify)",
+        "value": "Any Other (Please specify)",
         "label": "Any Other (Please specify)"
       }
     ],
