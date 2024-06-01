@@ -9,7 +9,7 @@ import { HOMEPAGE } from "./Utility/Constant";
 export default function Home() {
   const fs = require("fs");
   const path = require("path");
-  let path1 = process.cwd();
+  let path1 = process.cwd(__dirname);
 
   let data = fs.readdirSync(
     path.join(
