@@ -9,7 +9,7 @@ import {
 import React, { useState } from "react";
 import OpenImage from "./OpenImage";
 
-export default function ImageRendering({ path, allImage }) {
+export default function ImageRendering({ path, allImage, message }) {
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
   const handleOpen = (image) => {
@@ -20,7 +20,7 @@ export default function ImageRendering({ path, allImage }) {
     setOpen(false);
     setSelectedImage("");
   };
-  console.log({ selectedImage });
+  console.log({ selectedImage, allImage, message });
   return (
     <div className="flex flex-col">
       <ImageList

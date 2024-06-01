@@ -12,6 +12,7 @@ export default function page(req) {
     selectDb = selectDb || galleryDb[0];
   }
   let allImagePath = [];
+  let message = "no message";
   try {
     const fs = require("fs");
     const path = require("path");
@@ -21,12 +22,17 @@ export default function page(req) {
   } catch (e) {
     allImagePath = [];
     console.log(e);
+    message = e?.message || "something went wrong";
   }
 
   return (
     <div>
       <SelectBox allImagePath={galleryDb} selectedValue={selectDb} />
-      <ImageRendering path={selectDb?.folderPath} allImage={allImagePath} />
+      <ImageRendering
+        path={selectDb?.folderPath}
+        allImage={allImagePath}
+        message={message}
+      />
     </div>
   );
 }
