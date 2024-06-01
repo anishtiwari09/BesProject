@@ -1,3 +1,4 @@
+import { getProjectRoot } from "@/config";
 import Countdown from "./UIComponent/Carousel/HomePage/Countdown";
 import EventDetails from "./UIComponent/Carousel/HomePage/EventDetails";
 import HomePageCarousel from "./UIComponent/Carousel/HomePage/HomePageCarousel";
@@ -9,7 +10,7 @@ import { HOMEPAGE } from "./Utility/Constant";
 export default function Home() {
   const fs = require("fs");
   const path = require("path");
-  let path1 = __dirname;
+  let path1 = getProjectRoot();
 
   let data = fs.readdirSync(
     path.join(

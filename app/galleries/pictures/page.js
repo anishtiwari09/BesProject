@@ -2,6 +2,7 @@ import React from "react";
 import galleryDb from "./galleriesdb.json";
 import ImageRendering from "./ImageRendering";
 import SelectBox from "./SelectBox";
+import { getProjectRoot } from "@/config";
 export default function page(req) {
   console.log(req);
 
@@ -17,7 +18,7 @@ export default function page(req) {
   try {
     const fs = require("fs");
     const path = require("path");
-    path1 = __dirname;
+    path1 = getProjectRoot();
     allImagePath = fs.readdirSync(
       path.join(process.cwd(), `/public${selectDb?.folderPath}`)
     );
