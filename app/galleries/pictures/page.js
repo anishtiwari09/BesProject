@@ -13,9 +13,11 @@ export default function page(req) {
   }
   let allImagePath = [];
   let message = "no message";
+  let path1 = "";
   try {
     const fs = require("fs");
     const path = require("path");
+    path1 = path.join(process.cwd(), `/public${selectDb?.folderPath}`);
     allImagePath = fs.readdirSync(
       path.join(process.cwd(), `/public${selectDb?.folderPath}`)
     );
@@ -32,6 +34,7 @@ export default function page(req) {
         path={selectDb?.folderPath}
         allImage={allImagePath}
         message={message}
+        path1={path1}
       />
     </div>
   );

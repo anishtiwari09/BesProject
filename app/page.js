@@ -9,6 +9,11 @@ import { HOMEPAGE } from "./Utility/Constant";
 export default function Home() {
   const fs = require("fs");
   const path = require("path");
+  let path1 = path.join(
+    process.cwd(),
+    "/public" + HOMEPAGE.sliderImageDir + HOMEPAGE.currentYear
+  );
+
   let data = fs.readdirSync(
     path.join(
       process.cwd(),
@@ -25,6 +30,7 @@ export default function Home() {
         <HomePageCarousel
           data={data}
           url={HOMEPAGE.sliderImageDir + HOMEPAGE.currentYear}
+          path1={path1}
         />
         <Countdown
           from={
