@@ -35,7 +35,7 @@ export default function page(req) {
         path={selectDb?.folderPath}
         allImage={allImagePath}
         message={message}
-        path1={path1}
+        path2={path1}
       />
     </div>
   );
