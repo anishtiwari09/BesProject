@@ -9,10 +9,7 @@ import { HOMEPAGE } from "./Utility/Constant";
 export default function Home() {
   const fs = require("fs");
   const path = require("path");
-  let path1 = path.join(
-    process.cwd(),
-    "/public" + HOMEPAGE.sliderImageDir + HOMEPAGE.currentYear
-  );
+  let path1 = process.cwd();
 
   let data = fs.readdirSync(
     path.join(

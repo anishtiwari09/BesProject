@@ -17,7 +17,7 @@ export default function page(req) {
   try {
     const fs = require("fs");
     const path = require("path");
-    path1 = path.join(process.cwd(), `/public${selectDb?.folderPath}`);
+    path1 = process.cwd();
     allImagePath = fs.readdirSync(
       path.join(process.cwd(), `/public${selectDb?.folderPath}`)
     );
