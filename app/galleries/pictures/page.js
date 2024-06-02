@@ -18,9 +18,11 @@ export default function page(req) {
   try {
     const fs = require("fs");
     const path = require("path");
+    let directory =
+      process.env.enviroment === "production" ? "/vercel/path0" : process.cwd();
     path1 = getProjectRoot();
     allImagePath = fs.readdirSync(
-      path.join(process.cwd(), `/public${selectDb?.folderPath}`)
+      path.join(directory, `/public${selectDb?.folderPath}`)
     );
   } catch (e) {
     allImagePath = [];
