@@ -6,15 +6,13 @@ import Notification from "./UIComponent/Carousel/HomePage/Notification";
 import Partener from "./UIComponent/Carousel/HomePage/Partener";
 import YoutubeThumbnail from "./UIComponent/Carousel/HomePage/YoutubeThumbnail";
 import { HOMEPAGE } from "./Utility/Constant";
+import { getSliderImages } from "./Utility/lib/file";
 
 export default function Home() {
   const fs = require("fs");
   const path = require("path");
-  let files = path.join(
-    process.cwd(),
-    "/public" + HOMEPAGE.sliderImageDir + HOMEPAGE.currentYear
-  );
-  let data = fs.readdirSync(files);
+  let files = path.join(process.cwd(), "/public" + "/Images/Slider/2024");
+  let data = getSliderImages() || [];
 
   return (
     <div className="relative">

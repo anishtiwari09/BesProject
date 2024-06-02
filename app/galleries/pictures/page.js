@@ -3,6 +3,7 @@ import galleryDb from "./galleriesdb.json";
 import ImageRendering from "./ImageRendering";
 import SelectBox from "./SelectBox";
 import { getProjectRoot } from "@/config";
+import { getSliderImages } from "@/app/Utility/lib/file";
 export default function page(req) {
   console.log(req);
 
@@ -23,7 +24,7 @@ export default function page(req) {
 
     let files = path.join(directory, `/public${selectDb?.folderPath}`);
     path1 = files;
-    allImagePath = fs.readdirSync(files);
+    allImagePath = getSliderImages();
   } catch (e) {
     allImagePath = [];
     console.log(e);
