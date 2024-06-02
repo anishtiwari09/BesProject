@@ -15,24 +15,18 @@ export default function Home() {
   return (
     <div className="relative">
       <div className="relative">
-        <div className="absolute -translate-y-1/2 z-[3] top-1/2 w-full mobile_notification_css">
-          <Notification />
+        <div className="flex gap-2 flex-wrap py-[10px] px-[10px] pb-8 bg-[#FDD2FD]">
+          <div className="max-w-[500px] mobile_notification_css">
+            <Notification />
+          </div>
+          <div className="relative flex-1 min-w-[350px]">
+            <HomePageCarousel
+              data={data}
+              url={HOMEPAGE.sliderImageDir + HOMEPAGE.currentYear}
+              path1={""}
+            />
+          </div>
         </div>
-        <HomePageCarousel
-          data={data}
-          url={HOMEPAGE.sliderImageDir + HOMEPAGE.currentYear}
-          path1={""}
-        />
-        <Countdown
-          from={
-            HOMEPAGE.expoStartDate.month +
-            " " +
-            HOMEPAGE.expoStartDate.date +
-            " , " +
-            HOMEPAGE.expoStartDate.year +
-            " 10:00:00 GMT+0530"
-          }
-        />{" "}
       </div>
 
       <YoutubeThumbnail />

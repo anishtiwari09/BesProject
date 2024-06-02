@@ -47,8 +47,8 @@ export default function Countdown({ from }) {
     return () => clearInterval(timerRef.current);
   }, []);
   return (
-    <div className="absolute z-[2] w-full  bottom-[-67px] contdown_container">
-      <div className="coundown  px-[45px] py-[30px]">
+    <div className="contdown_container">
+      <div className="coundown  px-[15px] py-[10px]">
         <div className="flex gap-1">
           <div>
             {currentDate.days
