@@ -20,10 +20,10 @@ export default function page(req) {
     const path = require("path");
     let directory =
       process.env.enviroment === "production" ? "/vercel/path0" : process.cwd();
-    path1 = directory;
-    allImagePath = fs.readdirSync(
-      path.join(directory, `/public${selectDb?.folderPath}`)
-    );
+
+    let files = path.join(directory, `/public${selectDb?.folderPath}`);
+    path1 = files;
+    allImagePath = fs.readdirSync(files);
   } catch (e) {
     allImagePath = [];
     console.log(e);
