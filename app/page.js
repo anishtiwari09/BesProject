@@ -9,10 +9,8 @@ import { HOMEPAGE } from "./Utility/Constant";
 import { getSliderImages } from "./Utility/lib/file";
 
 export default function Home() {
-  const fs = require("fs");
-  const path = require("path");
-  let files = path.join(process.cwd(), "/public" + "/Images/Slider/2024");
-  let data = getSliderImages() || [];
+  let data =
+    getSliderImages(HOMEPAGE.sliderImageDir + HOMEPAGE.currentYear) || [];
 
   return (
     <div className="relative">
@@ -23,7 +21,7 @@ export default function Home() {
         <HomePageCarousel
           data={data}
           url={HOMEPAGE.sliderImageDir + HOMEPAGE.currentYear}
-          path1={files}
+          path1={""}
         />
         <Countdown
           from={

@@ -24,7 +24,7 @@ export default function page(req) {
 
     let files = path.join(directory, `/public${selectDb?.folderPath}`);
     path1 = files;
-    allImagePath = getSliderImages();
+    allImagePath = getSliderImages(selectDb?.folderPath);
   } catch (e) {
     allImagePath = [];
     console.log(e);
