@@ -8,5 +8,15 @@
     "name": "2020",
     "value": "2020",
     "folderPath": "/Images/ImageGallery/2020"
+  },
+  {
+    "name": "2019",
+    "value": "2019",
+    "folderPath": "/Images/ImageGallery/2019"
+  },
+  {
+    "name": "2018",
+    "value": "2018",
+    "folderPath": "/Images/ImageGallery/2018"
   }
 ]
