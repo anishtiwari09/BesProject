@@ -5,8 +5,6 @@ import SelectBox from "./SelectBox";
 import { getProjectRoot } from "@/config";
 import { getSliderImages } from "@/app/Utility/lib/file";
 export default function page(req) {
-  console.log(req);
-
   let selectDb = galleryDb[0];
   let selectedValue = req.searchParams?.selectedValue;
   if (req.searchParams?.selectedValue) {

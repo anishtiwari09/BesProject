@@ -11,16 +11,16 @@ import OpenImage from "./OpenImage";
 
 export default function ImageRendering({ path, allImage, message, path2 }) {
   const [open, setOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState("");
-  const handleOpen = (image) => {
-    setSelectedImage(image);
+  const [selectedImageIndex, setSelectedImageIndex] = useState("");
+  const handleOpen = (i) => {
+    setSelectedImageIndex(i);
     setOpen(true);
   };
-  const handleClose = () => {
+  const handleClose = (i) => {
     setOpen(false);
-    setSelectedImage("");
+    setSelectedImageIndex(i);
   };
-  console.log({ selectedImage, allImage, message, path2, path });
+
   return (
     <div className="flex flex-col">
       <ImageList
@@ -30,7 +30,7 @@ export default function ImageRendering({ path, allImage, message, path2 }) {
         gap={20}
       >
         {allImage.map((item, index) => (
-          <ImageListItem key={index} onClick={() => handleOpen(item)}>
+          <ImageListItem key={index} onClick={() => handleOpen(index)}>
             <img
               src={`${path}/${item}?w=164&h=164&fit=crop&auto=format`}
               alt={item}
@@ -44,10 +44,12 @@ export default function ImageRendering({ path, allImage, message, path2 }) {
       </ImageList>
       {open && (
         <OpenImage
-          imageSrc={`${path}/${selectedImage}`}
-          imageAlt={selectedImage}
+          key={selectedImageIndex}
+          imagePath={path}
+          startIndex={selectedImageIndex}
           open={true}
           handleClose={handleClose}
+          data={allImage}
         />
       )}
     </div>
