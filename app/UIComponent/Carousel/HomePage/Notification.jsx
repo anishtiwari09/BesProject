@@ -41,7 +41,7 @@ export default function Notification() {
           BES Expo 2024 Presentation
         </a>
       </div>
-
+{/* 
       <a className="flex w-fit" href="/pdf/others/INVITATIONWTD.pdf">
         <Button
           variant="contained"
@@ -50,8 +50,8 @@ export default function Notification() {
           INVITATION FOR WORLD TELECOM DAY-2024
         </Button>
       </a>
-
-      {/*  <a
+*/}
+       <a
         className="flex"
         href="/event_conference/bes_expo/exibition/participation_fee"
       >
@@ -62,8 +62,7 @@ export default function Notification() {
           Book Your Space
         </Button>
       </a>
-*/}
-      {/*
+
       <div className="flex gap-2 justify-center mt-4 registration_btn_container">
         <Link href={"/registrationform/visitor"}>
           <Button
@@ -75,8 +74,8 @@ export default function Notification() {
           >
             Visitor Registration
           </Button>
-          </Link>  */}
-      {/*}
+          </Link> 
+      
         <Link href={"/registrationform/delegateregistration"}>
           <Button
             variant="contained"
@@ -88,7 +87,7 @@ export default function Notification() {
             Delegate Registration
           </Button>
           </Link> 
-      </div> */}
+      </div> 
       <Countdown
         from={
           HOMEPAGE.expoStartDate.month +
