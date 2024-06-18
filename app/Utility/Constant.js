@@ -18,3 +18,9 @@ export const HOMEPAGE = {
 export const OTHERPAGE = {
   currentCouncil: "2024-26",
 };
+
+export const NOTIFICATION_TEXT = {
+  text: "IETE elects Sunil, Ex Additional DG – Prasar Bharati, asPresident",
+  href: "https://www.indianbroadcastingworld.com/iete-elects-sunil-prasar-bharati/",
+  isShow: true,
+};

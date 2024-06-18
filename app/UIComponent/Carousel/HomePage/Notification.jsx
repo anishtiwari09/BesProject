@@ -3,6 +3,7 @@ import React from "react";
 import BasicCarousel from "./BasicCarousel";
 import { HOMEPAGE } from "../../../Utility/Constant";
 import Countdown from "./Countdown";
+import Link from "next/link";
 
 export default function Notification() {
   return (

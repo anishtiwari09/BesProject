@@ -5,8 +5,9 @@ import HomePageCarousel from "./UIComponent/Carousel/HomePage/HomePageCarousel";
 import Notification from "./UIComponent/Carousel/HomePage/Notification";
 import Partener from "./UIComponent/Carousel/HomePage/Partener";
 import YoutubeThumbnail from "./UIComponent/Carousel/HomePage/YoutubeThumbnail";
-import { HOMEPAGE } from "./Utility/Constant";
+import { HOMEPAGE, NOTIFICATION_TEXT } from "./Utility/Constant";
 import { getSliderImages } from "./Utility/lib/file";
+import NotificationText from "./UIComponent/Carousel/HomePage/NotificationText";
 
 export default function Home() {
   let data =
@@ -27,6 +28,12 @@ export default function Home() {
             />
           </div>
         </div>
+        {NOTIFICATION_TEXT.isShow && NOTIFICATION_TEXT.text && (
+          <NotificationText
+            text={NOTIFICATION_TEXT.text}
+            href={NOTIFICATION_TEXT.href}
+          />
+        )}
       </div>
 
       <YoutubeThumbnail />

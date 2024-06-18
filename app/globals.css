@@ -181,3 +181,51 @@ a.header2_menu_list_open::before {
   text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5),
     2px -2px 0 rgba(255, 255, 255, 0.9);
 }
+
+.coundown2 > div > div {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.coundown2 > div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.coundown2 {
+  background: linear-gradient(to left, #f70068 0%, #441066 100%);
+  margin: auto;
+  max-width: 1200px;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marqueeInner {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 30s linear infinite, blink 1s step-start infinite;
+}
+
+.marqueeInner span {
+  display: inline-block;
+  padding-right: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.marqueeInner:hover {
+  animation-play-state: paused;
+}
