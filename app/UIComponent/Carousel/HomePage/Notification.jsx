@@ -14,7 +14,7 @@ export default function Notification() {
           Broadcast & Media Technology
         </h4>
         <h3 className="font-bold text-3xl text-[#faac1d] text-center conference_text conference_text2 text-shadow">
-          {HOMEPAGE.expoStartDate.date}th to {HOMEPAGE.expoEndDate.date}nd
+          {HOMEPAGE.expoStartDate.date}th to {HOMEPAGE.expoEndDate.date}nd{" "}
           {HOMEPAGE.expoEndDate.fullMonth} {HOMEPAGE.expoEndDate.year}
         </h3>
       </React.Fragment>
@@ -42,7 +42,7 @@ export default function Notification() {
           BES Expo 2024 Presentation
         </a>
       </div>
-{/* 
+      {/* 
       <a className="flex w-fit" href="/pdf/others/INVITATIONWTD.pdf">
         <Button
           variant="contained"
@@ -52,7 +52,10 @@ export default function Notification() {
         </Button>
       </a>
 */}
-       <a className="flex" href="/event_conference/bes_expo/exibition/participation_fee">
+      <a
+        className="flex"
+        href="/event_conference/bes_expo/exibition/participation_fee"
+      >
         <Button
           variant="contained"
           className="flex w-fit m-auto mt-4 bg-[#222fda] text-[16px] font-[500] hover:bg-[#ffffff] hover:text-[#000]"
@@ -72,8 +75,8 @@ export default function Notification() {
           >
             Visitor Registration
           </Button>
-          </Link> 
-      
+        </Link>
+
         <Link href={"/registrationform/delegateregistration"}>
           <Button
             variant="contained"
@@ -84,8 +87,8 @@ export default function Notification() {
           >
             Delegate Registration
           </Button>
-          </Link> 
-      </div> 
+        </Link>
+      </div>
       <Countdown
         from={
           HOMEPAGE.expoStartDate.month +
