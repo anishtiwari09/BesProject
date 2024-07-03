@@ -20,7 +20,7 @@ export const OTHERPAGE = {
 };
 
 export const NOTIFICATION_TEXT = {
-  text: "IETE elects Sunil, Ex Additional DG – Prasar Bharati, asPresident",
+  text: "IETE elects Sunil, Ex Additional DG – Prasar Bharati, as President",
   href: "https://www.indianbroadcastingworld.com/iete-elects-sunil-prasar-bharati/",
   isShow: true,
 };
