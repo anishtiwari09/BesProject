@@ -1,4 +1,3 @@
-import { getProjectRoot } from "@/config";
 import Countdown from "./UIComponent/Carousel/HomePage/Countdown";
 import EventDetails from "./UIComponent/Carousel/HomePage/EventDetails";
 import HomePageCarousel from "./UIComponent/Carousel/HomePage/HomePageCarousel";

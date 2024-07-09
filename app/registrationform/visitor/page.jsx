@@ -25,6 +25,7 @@ export default function page() {
             db={visitorDb}
             apiLink={"/backend/api/registration/visitor_registration"}
             request={"POST"}
+            currentPath={"visitor"}
           />
         </Box>
       </div>
