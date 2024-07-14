@@ -3,6 +3,7 @@ import visitorDb from "./Utility/db.json";
 import Form from "../Form/Form";
 import styles from "../Form/form.module.css";
 import { Box } from "@mui/material";
+import { REGISTRATION_PATH } from "@/app/Utility/_shared/Constant";
 export default function page() {
   return (
     <div className="w-full bg-[#f2f2f2] p-4">
@@ -25,7 +26,7 @@ export default function page() {
             db={visitorDb}
             apiLink={"/backend/api/registration/visitor_registration"}
             request={"POST"}
-            currentPath={"visitor"}
+            currentPath={REGISTRATION_PATH.visitor}
           />
         </Box>
       </div>

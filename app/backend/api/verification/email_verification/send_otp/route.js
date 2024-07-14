@@ -1,5 +1,8 @@
 import emailVerification from "@/app/backend/models/email_verification.model";
 import { NextResponse } from "next/server";
+import { sendMail } from "../../../sendMail/mail";
+import { generateOtp } from "@/app/backend/helper/mailHelper/otpGenerator";
+import { generateOtpTemplate } from "@/app/backend/helper/mailHelper/template/otpTemplate";
 
 const { connect } = require("@/app/backend/dbConfig/dbConfig");
 
@@ -7,22 +10,35 @@ connect();
 export async function POST(req) {
   try {
     let json = await req.json();
-    const { email } = json;
+    const { email, from } = json;
     const options = {
       new: true, // Return the updated document
       upsert: true, // Create the document if it doesn't exist
       setDefaultsOnInsert: true, // Apply schema defaults on insert
     };
+    let otp = generateOtp(4);
     let data = await emailVerification.findOneAndUpdate(
       { email },
-      { email, otpCode: 1234, timeStamp: Date.now(), isVerified: false },
+      {
+        email,
+        otpCode: otp,
+        timeStamp: Date.now(),
+        isVerified: false,
+        hasOtpExpired: false,
+      },
       options
     );
+
+    await sendMail({
+      email,
+      subject: `Otp for Bes ${from ? from : ""} registration`,
+      html: generateOtpTemplate(otp),
+    });
     return NextResponse.json(
       {
-        message: "Otp is generated successfully",
+        message: "Otp is Send successfully",
         status: true,
-        otp: 1234,
+        otp,
       },
       { status: 201 }
     );

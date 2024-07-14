@@ -19,6 +19,11 @@ const Schema = new mongoose.Schema(
       required: true,
       type: Boolean,
     },
+    hasOtpExpired: {
+      default: false,
+      required: true,
+      type: Boolean,
+    },
   },
   { timestamps: true }
 );
