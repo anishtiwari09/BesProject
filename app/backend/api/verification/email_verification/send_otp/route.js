@@ -9,6 +9,7 @@ const { connect } = require("@/app/backend/dbConfig/dbConfig");
 connect();
 export async function POST(req) {
   try {
+    console.log('send otp')
     let json = await req.json();
     const { email, from } = json;
     const options = {
