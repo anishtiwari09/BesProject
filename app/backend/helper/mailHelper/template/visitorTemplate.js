@@ -1,4 +1,7 @@
-export const visitorUserDetailsTemplate = (userDetails) => {
+export const visitorUserDetailsTemplate = (
+  userDetails,
+  type = "New Visitor Registered"
+) => {
   let userStr = "";
 
   for (let key in userDetails) {
@@ -13,10 +16,10 @@ export const visitorUserDetailsTemplate = (userDetails) => {
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
             <td align="center" style="padding: 20px 0;">
-                <table width="600" border="0" cellspacing="0" cellpadding="0" style="background-color: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
                     <tr>
                         <td align="center" style="background-color: #007BFF; color: #ffffff; padding: 10px 0; border-radius: 5px 5px 0 0;">
-                            <h1>New Visitor Registered</h1>
+                            <h1>${type}</h1>
                         </td>
                     </tr>
                     <tr>
