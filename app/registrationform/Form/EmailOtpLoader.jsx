@@ -1,12 +1,14 @@
 import { Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-
+const MAX_COUNT = 300;
 export default function EmailOtpLoader({ setIsOtpSend }) {
-  const [count, setCount] = useState(300);
+  const [count, setCount] = useState(MAX_COUNT);
   useEffect(() => {
+    let prevDate = Date.now();
     let id = setInterval(() => {
-      setCount((count) => {
-        let temp = count - 1;
+      setCount(() => {
+        let remainingTime = Math.floor((Date.now() - prevDate) / 1000);
+        let temp = MAX_COUNT - remainingTime;
         if (temp <= 0) {
           clearInterval(id);
           setIsOtpSend(false);
