@@ -28,7 +28,6 @@ export default function Form({ db, onClick, apiLink, currentPath }) {
   const [isEmailVerified, setIsEmailVerified] = useState(false);
   const [isOtpSend, setIsOtpSend] = useState(false);
   const [isDisabledOtpSendBtn, setIsDisabledOtpSendBtn] = useState(false);
-  const isOtpVerifyingRef = useRef(false);
   const [alertMessage, setAlertMessage] = useState("");
   const [isDisabled, setIsDisabled] = useState(false);
   const [otpInput, setOtpInput] = React.useState("");
@@ -254,7 +253,9 @@ export default function Form({ db, onClick, apiLink, currentPath }) {
                               </Button>
                             )}
                           </Stack>
-                          <EmailOtpLoader setIsOtpSend={isDisabledOtpSendBtn} />
+                          <EmailOtpLoader
+                            setIsOtpSend={setIsDisabledOtpSendBtn}
+                          />
                         </Stack>
                       ) : (
                         <Button onClick={handleSendEmailOtp}>

@@ -1,25 +1,42 @@
 "use client";
 import { emailValidator, numberValidator } from "@/app/Utility/validator";
 import {
+  Alert,
   Autocomplete,
   Button,
   FormControl,
   FormHelperText,
   MenuItem,
   Select,
+  Stack,
   TextField,
 } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@/app/registrationform/Form/form.module.css";
 import PleaseWaitLoader from "@/app/UIComponent/Loader/PleaseWaitLoader";
-export default function BookYourSpace({ countryData }) {
+import OTP from "@/app/registrationform/Form/otpinput";
+import EmailOtpLoader from "@/app/registrationform/Form/EmailOtpLoader";
+import axios from "axios";
+import SuccessModal from "@/app/UIComponent/Modals/SuccessModal";
+export default function BookYourSpace({
+  countryData,
+  currentPath = "bookMySpace",
+}) {
   const [data, setData] = useState({});
   const [submit, setSubmit] = useState(false);
+  const [showSuccessModal, setSuccessModal] = useState(false);
+  const [isEmailVerified, setIsEmailVerified] = useState(false);
+  const [isDisabledOtpSendBtn, setIsDisabledOtpSendBtn] = useState(false);
+  const [otpInput, setOtpInput] = React.useState("");
+  const [isDisabled, setIsDisabled] = useState(false);
+  const [alertMessage, setAlertMessage] = useState("");
+  const [isOtpSend, setIsOtpSend] = useState(false);
+  const [currentEmail, setCurrentEmail] = useState("");
   const handleChange = (type, value) => {
-    console.log(value, type);
-    if (data[type]) data[type].value = value?.trim();
+    if (isOtpSend && type === "email") return;
+    if (data[type]) data[type].value = value;
     else {
-      data[type] = { value: value?.trim() };
+      data[type] = { value: value };
     }
     if (value?.trim()) {
       data[type].isError = false;
@@ -35,18 +52,40 @@ export default function BookYourSpace({ countryData }) {
       data[type] = data[type] || {};
       data[type].isError = true;
     }
-    console.log({ type: data[type] });
     data[type].error = "";
     return isFlag;
   };
+  const handleSubmitApi = async (data) => {
+    try {
+      let res = await axios({
+        method: "POST",
+        url: "/backend/api/registration/book_my_space",
+        data: { ...data, otp: otpInput },
+      });
+      setAlertMessage(res?.message || "Something went wrong");
+      if (!res.status) {
+        setSubmit(false);
+      } else {
+        setSuccessModal(true);
+      }
+    } catch (e) {
+      console.log(e);
+      setAlertMessage(e?.response?.data?.message || "Something went wrong");
+      setSubmit(false);
+    }
+  };
   const handleSubmit = () => {
+    setAlertMessage("");
+    if (!isEmailVerified) {
+      setAlertMessage("Please Verify the email");
+      return;
+    }
     let isFlag = [];
     isFlag.push(checkValidator("name", data));
     isFlag.push(checkValidator("company", data));
     isFlag.push(checkValidator("city", data));
     let temp = checkValidator("email", data);
     if (temp) {
-      console.log(data["email"]?.value);
       let validator = emailValidator(data["email"]?.value || "");
       isFlag.push(validator);
       if (!validator) {
@@ -68,12 +107,91 @@ export default function BookYourSpace({ countryData }) {
     isFlag.push(checkValidator("country", data));
     isFlag.push(checkValidator("about_expo", data));
     if (isFlag.includes(false)) {
-      console.log(data);
       setData({ ...data });
     } else {
+      let finalObj = {};
+      for (let key in data) {
+        finalObj[key] = data[key].value?.trim();
+      }
+
       setSubmit(true);
+      handleSubmitApi(finalObj);
     }
   };
+  const invalidEmailShowMessage = (item) => {
+    item.isError = true;
+  };
+  const handleSendEmailOtp = async () => {
+    let isValidEmail = true;
+    let value = data["email"]?.value;
+    isValidEmail = emailValidator(value);
+    if (!isValidEmail) {
+      if (data["email"]) invalidEmailShowMessage(data["email"]);
+      else {
+        data.email = {
+          value: "",
+          isError: true,
+          error: "Please enter valid email",
+        };
+      }
+    }
+
+    if (isValidEmail) {
+      setIsOtpSend(true);
+      setIsDisabledOtpSendBtn(true);
+      setCurrentEmail(value);
+    } else {
+      setData({ ...data });
+    }
+  };
+  const handleEmailVerify = async () => {
+    if (otpInput?.length < 4) {
+      setAlertMessage("Please Enter the otp");
+      return;
+    }
+    setIsDisabled(true);
+    setAlertMessage("");
+    try {
+      let result = await axios({
+        method: "POST",
+        url: "/backend/api/verification/email_verification/verify_otp",
+        data: {
+          email: currentEmail,
+          otp: otpInput,
+        },
+      });
+
+      if (result.status) {
+        setIsEmailVerified(true);
+        return;
+      } else {
+        setAlertMessage(result?.message || "Invalid Otp");
+      }
+    } catch (e) {
+      setAlertMessage(e?.response?.data?.message || "Invalid Otp");
+      console.log(e);
+    }
+    setIsDisabled(false);
+  };
+  const sendEmailOtp = async (email) => {
+    try {
+      await axios({
+        method: "POST",
+        url: "/backend/api/verification/email_verification/send_otp",
+        data: {
+          email,
+          from: currentPath,
+        },
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  };
+  useEffect(() => {
+    if (isDisabledOtpSendBtn && !isEmailVerified && currentEmail) {
+      sendEmailOtp(currentEmail);
+    }
+  }, [isDisabledOtpSendBtn, currentEmail]);
   return (
     <div className="flex gap-2 flex-col bg-white p-4 rounded">
       <h3 className="text-[30px] font-bold">Book your space</h3>
@@ -82,6 +200,7 @@ export default function BookYourSpace({ countryData }) {
         team will get back to you.
       </p>
       <div className="flex flex-col gap-4 my-8">
+        {alertMessage && <Alert severity="error">{alertMessage}</Alert>}
         <div className="flex flex-row gap-4 items-center ">
           <label className="w-[180px]">
             Full Name <span className="text-[red]">*</span>
@@ -134,6 +253,7 @@ export default function BookYourSpace({ countryData }) {
           </label>
           <div className="flex flex-1">
             <TextField
+              disabled={submit || isEmailVerified || isOtpSend}
               fullWidth
               value={data["email"]?.value || ""}
               error={data["email"]?.isError || false}
@@ -146,6 +266,48 @@ export default function BookYourSpace({ countryData }) {
             />
           </div>
         </div>
+        {!isEmailVerified && (
+          <div className="flex flex-row gap-4 items-center">
+            <label className="w-[180px] invisible">
+              Email <span className="text-[red]">*</span>
+            </label>
+            <div className="flex flex-1">
+              {isDisabledOtpSendBtn && !isEmailVerified ? (
+                <Stack
+                  direction={"column"}
+                  alignItems={"center"}
+                  marginTop={2}
+                  gap={1}
+                >
+                  <Stack direction={"row"} gap={1}>
+                    <OTP
+                      separator={" "}
+                      value={otpInput}
+                      disabled={isDisabled}
+                      onChange={isDisabled ? () => {} : setOtpInput}
+                      length={4}
+                    />
+                    {isDisabled ? (
+                      <h3>Otp is Verifying</h3>
+                    ) : (
+                      <Button
+                        className="text-red-600"
+                        onClick={handleEmailVerify}
+                      >
+                        Verify Otp
+                      </Button>
+                    )}
+                  </Stack>
+                  <EmailOtpLoader setIsOtpSend={setIsDisabledOtpSendBtn} />
+                </Stack>
+              ) : (
+                <Button onClick={handleSendEmailOtp}>
+                  {isOtpSend ? "Resend " : "Send "}Otp
+                </Button>
+              )}
+            </div>
+          </div>
+        )}
         <div className="flex flex-row gap-4 items-center">
           <label className="w-[180px]">
             Mobile No. <span className="text-[red]">*</span>
@@ -268,6 +430,7 @@ export default function BookYourSpace({ countryData }) {
           )}
         </div>
       </div>
+      {showSuccessModal && <SuccessModal isOpen={true} />}
     </div>
   );
 }
