@@ -8,7 +8,7 @@ export default function Partener() {
       }}
     >
       <h1 className="text-center text-[24px] font-bold mb-8 mt-8">
-        Media Partners
+       Approved & Supported By
       </h1>
       <div className="flex gap-8 flex-wrap justify-center partner_container">
         <div className="supporeted_partner">
