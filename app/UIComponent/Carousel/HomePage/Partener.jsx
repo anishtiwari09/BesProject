@@ -7,6 +7,11 @@ export default function Partener() {
         padding: "32px 10%",
       }}
     >
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <h1 className="text-center text-[24px] font-bold mb-8 mt-8">
        Approved & Supported By
       </h1>
